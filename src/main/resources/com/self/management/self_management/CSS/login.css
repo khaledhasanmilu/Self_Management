@@ -1,0 +1,21 @@
+.inputField {
+    -fx-background-color:transparent;
+    -fx-border-color: black;
+    -fx-background-radius: 2px;
+}
+.inputField:hover{
+    -fx-border-color: rgb(24, 116, 142);
+}
+.inputBtn {
+    -fx-background-color: rgba(190, 190, 216, 0.498);
+
+}
+
+.inputBtn:hover {
+    -fx-border-color: black;
+    -fx-cursor: hand;
+}
+
+.leftContainer{
+    -fx-background-color: rgba(5, 0, 0, 0.836);
+}

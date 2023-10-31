@@ -1,0 +1,10 @@
+module com.self.management.self_management {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+
+    opens com.self.management.self_management to javafx.fxml;
+    exports com.self.management.self_management;
+    exports com.self.management.self_management.Controller;
+    opens com.self.management.self_management.Controller to javafx.fxml;
+}
