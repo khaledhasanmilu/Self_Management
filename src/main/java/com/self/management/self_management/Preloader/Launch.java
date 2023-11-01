@@ -1,4 +1,5 @@
-package com.self.management.self_management;
+package com.self.management.self_management.Preloader;
+import com.self.management.self_management.MainApp;
 import javafx.application.Preloader;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,7 +17,7 @@ public class Launch extends Preloader {
     @Override
     public void start(Stage stage) throws Exception {
         this.preloaderStage=stage;
-        Parent root = FXMLLoader.load(getClass().getResource("FXML/initPreloader.fxml"));
+        Parent root = FXMLLoader.load(MainApp.class.getResource("FXML/initPreloader.fxml"));
         Scene scene = new Scene(root);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);

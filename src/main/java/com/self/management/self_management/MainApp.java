@@ -1,5 +1,6 @@
 package com.self.management.self_management;
 
+import com.self.management.self_management.Preloader.Launch;
 import com.self.management.self_management.Preloader.initPreloader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
