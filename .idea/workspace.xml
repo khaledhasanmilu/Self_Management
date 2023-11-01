@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/LauncherPreloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/initPreloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/initPreloader.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/Screenshot 2023-11-01 034814.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/preload.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -25,7 +38,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2XXncj7uqWshiXWYHErMD3lhSMT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,7 +50,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "D:/New Volume E/UIU/Third Trimester/OOP Lab/Final/sceneBuilder/SceneBuilder.exe"
+    "last_opened_file_path": "D:/New Volume E/UIU/Third Trimester/OOP Lab/Final/sceneBuilder/SceneBuilder.exe",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -73,5 +91,16 @@
       <updated>1698784376476</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
