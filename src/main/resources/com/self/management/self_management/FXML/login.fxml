@@ -7,11 +7,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="com.self.management.self_management.Controller.HelloController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.HelloController">
    <children>
-      <Pane layoutY="-1.0" prefHeight="400.0" prefWidth="200.0" />
+      <Pane layoutY="-1.0" prefHeight="400.0" prefWidth="200.0" styleClass="leftContainer" stylesheets="@../CSS/login.css" />
       <TextField layoutX="360.0" layoutY="146.0" styleClass="inputField" stylesheets="@../CSS/login.css" />
       <PasswordField layoutX="360.0" layoutY="210.0" styleClass="inputField" stylesheets="@../CSS/login.css" />
       <Button id="btn" layoutX="410.0" layoutY="264.0" mnemonicParsing="false" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Log In" />
