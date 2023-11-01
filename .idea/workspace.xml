@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="adding some css in login screen">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashbord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/dashbord.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Launch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Preloader/Launch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="modify project structure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698872100240</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modify project structure">
+      <option name="closed" value="true" />
+      <created>1698876840860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698876840861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -150,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding preloader page" />
     <MESSAGE value="adding some css in login screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding some css in login screen" />
+    <MESSAGE value="modify project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify project structure" />
   </component>
 </project>
