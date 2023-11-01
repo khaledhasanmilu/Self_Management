@@ -1,13 +1,15 @@
 .inputField {
     -fx-background-color:transparent;
     -fx-border-color: black;
-    -fx-background-radius: 2px;
+    -fx-border-radius:20px;
 }
 .inputField:hover{
     -fx-border-color: rgb(24, 116, 142);
 }
 .inputBtn {
     -fx-background-color: rgba(190, 190, 216, 0.498);
+    -fx-background-radius:10px;
+    -fx-border-radius:10px;
 
 }
 
@@ -18,4 +20,12 @@
 
 .leftContainer{
     -fx-background-color: rgba(5, 0, 0, 0.836);
+}
+.close{
+    -fx-background-color:transparent;
+    -fx-background-radius:20px;
+}
+.close:hover{
+-fx-background-color:red;
+-fx-cursor:hand;
 }

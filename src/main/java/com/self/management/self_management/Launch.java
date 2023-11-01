@@ -6,7 +6,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class LauncherPreloader extends Preloader {
+import java.util.Objects;
+
+
+public class Launch extends Preloader {
 
     private Stage preloaderStage;
 

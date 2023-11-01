@@ -1,4 +1,4 @@
-package com.self.management.self_management;
+package com.self.management.self_management.Preloader;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;

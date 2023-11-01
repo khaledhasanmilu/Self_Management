@@ -1,5 +1,6 @@
 package com.self.management.self_management;
 
+import com.self.management.self_management.Preloader.initPreloader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -8,7 +9,7 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class MainApplication extends Application {
+public class MainApp extends Application {
     @Override
     public void init() throws Exception {
         initPreloader init = new initPreloader();
@@ -17,7 +18,7 @@ public class MainApplication extends Application {
     }
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("FXML/login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("FXML/login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         stage.setTitle("Hello!");
         stage.initStyle(StageStyle.UNDECORATED);
@@ -26,7 +27,7 @@ public class MainApplication extends Application {
     }
 
     public static void main(String[] args) {
-        System.setProperty("javafx.preloader", LauncherPreloader.class.getCanonicalName());
+        System.setProperty("javafx.preloader", Launch.class.getCanonicalName());
         launch();
     }
 }
