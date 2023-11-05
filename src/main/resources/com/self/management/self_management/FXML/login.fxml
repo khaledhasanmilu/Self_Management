@@ -2,31 +2,86 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.loginController">
    <children>
-      <TextField layoutX="360.0" layoutY="146.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-      <PasswordField layoutX="360.0" layoutY="210.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
-      <Button id="button" layoutX="410.0" layoutY="264.0" mnemonicParsing="false" onAction="#onLogin" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Log In" />
-      <FontAwesomeIconView glyphName="USER" layoutX="330.0" layoutY="164.0" size="18">
-         <font>
-            <Font size="35.0" />
-         </font>
-      </FontAwesomeIconView>
-      <FontAwesomeIconView glyphName="LOCK" layoutX="330.0" layoutY="228.0" size="18" />
-      <Button layoutX="572.0" layoutY="2.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
-         <graphic>
-            <FontAwesomeIconView glyphName="CLOSE" styleClass="close" />
-         </graphic>
-      </Button>
-      <Pane layoutY="2.0">
+      <Pane fx:id="Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" visible="false">
          <children>
-            <AnchorPane layoutY="-6.0" prefHeight="404.0" prefWidth="200.0" styleClass="leftContainer" stylesheets="@../CSS/login.css" />
+            <TextField layoutX="360.0" layoutY="146.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <PasswordField layoutX="360.0" layoutY="210.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <Button id="button" layoutX="410.0" layoutY="264.0" mnemonicParsing="false" onAction="#onLogin" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Log In" />
+            <FontAwesomeIconView glyphName="USER" layoutX="330.0" layoutY="164.0" size="18">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView glyphName="LOCK" layoutX="330.0" layoutY="228.0" size="18" />
+            <Button layoutX="572.0" layoutY="2.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" styleClass="close" />
+               </graphic>
+            </Button>
+            <Pane layoutY="2.0">
+               <children>
+                  <AnchorPane layoutY="-6.0" prefHeight="404.0" prefWidth="200.0" styleClass="leftContainer" stylesheets="@../CSS/login.css" />
+               </children>
+            </Pane>
+            <Hyperlink fx:id="regilink" layoutX="322.0" layoutY="327.0" onAction="#onRegistrationLink" text="Don't have a account? go to sinup" />
+         </children>
+      </Pane>
+      <Pane fx:id="Registration" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField layoutX="360.0" layoutY="64.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <PasswordField layoutX="360.0" layoutY="210.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <Button id="button" layoutX="393.0" layoutY="298.0" mnemonicParsing="false" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Registration" />
+            <FontAwesomeIconView glyphName="USER" layoutX="329.0" layoutY="83.0" size="18">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView glyphName="LOCK" layoutX="330.0" layoutY="228.0" size="18" />
+            <Button layoutX="572.0" layoutY="2.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" styleClass="close" />
+               </graphic>
+            </Button>
+            <Pane layoutY="2.0">
+               <children>
+                  <AnchorPane layoutY="-6.0" prefHeight="404.0" prefWidth="200.0" styleClass="leftContainer" stylesheets="@../CSS/login.css" />
+               </children>
+            </Pane>
+            <TextField layoutX="360.0" layoutY="107.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <DatePicker layoutX="360.0" layoutY="149.0" prefHeight="24.0" prefWidth="172.0" promptText="MM/DD/YY" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <RadioButton layoutX="360.0" layoutY="182.0" mnemonicParsing="false" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="460.0" layoutY="182.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+            <PasswordField layoutX="360.0" layoutY="245.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <FontAwesomeIconView glyphName="LOCK" layoutX="332.0" layoutY="264.0" size="18" />
+            <FontAwesomeIconView glyphName="MALE" layoutX="331.0" layoutY="197.0" size="18">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView glyphName="USER" layoutX="329.0" layoutY="164.0" size="18">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView glyphName="ENVELOPE" layoutX="331.0" layoutY="125.0" />
+            <FontAwesomeIconView glyphName="FEMALE" layoutX="435.0" layoutY="197.0" size="18" />
+            <Hyperlink fx:id="loginlink" layoutX="392.0" layoutY="341.0" onAction="#onLoginlink" text="Go to Log in" />
          </children>
       </Pane>
    </children>
