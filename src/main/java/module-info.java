@@ -1,6 +1,8 @@
 module com.self.management.self_management {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
+    requires mysql.connector.j;
 
 
     opens com.self.management.self_management to javafx.fxml;

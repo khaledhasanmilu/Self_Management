@@ -14,10 +14,10 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.loginController">
    <children>
-      <Pane fx:id="Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" visible="false">
+      <Pane fx:id="Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
-            <TextField layoutX="360.0" layoutY="146.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <PasswordField layoutX="360.0" layoutY="210.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <TextField fx:id="luser" layoutX="360.0" layoutY="146.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <PasswordField fx:id="lpass" layoutX="360.0" layoutY="210.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
             <Button id="button" layoutX="410.0" layoutY="264.0" mnemonicParsing="false" onAction="#onLogin" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Log In" />
             <FontAwesomeIconView glyphName="USER" layoutX="330.0" layoutY="164.0" size="18">
                <font>
@@ -38,11 +38,11 @@
             <Hyperlink fx:id="regilink" layoutX="322.0" layoutY="327.0" onAction="#onRegistrationLink" text="Don't have a account? go to sinup" />
          </children>
       </Pane>
-      <Pane fx:id="Registration" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+      <Pane fx:id="Registration" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" visible="false">
          <children>
-            <TextField layoutX="360.0" layoutY="64.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <PasswordField layoutX="360.0" layoutY="210.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <Button id="button" layoutX="393.0" layoutY="298.0" mnemonicParsing="false" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Registration" />
+            <TextField fx:id="runame" layoutX="360.0" layoutY="64.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <PasswordField fx:id="rpass" layoutX="360.0" layoutY="210.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <Button id="button" layoutX="393.0" layoutY="298.0" mnemonicParsing="false" onAction="#onRegibtn" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Registration" />
             <FontAwesomeIconView glyphName="USER" layoutX="329.0" layoutY="83.0" size="18">
                <font>
                   <Font size="35.0" />
@@ -59,15 +59,15 @@
                   <AnchorPane layoutY="-6.0" prefHeight="404.0" prefWidth="200.0" styleClass="leftContainer" stylesheets="@../CSS/login.css" />
                </children>
             </Pane>
-            <TextField layoutX="360.0" layoutY="107.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <DatePicker layoutX="360.0" layoutY="149.0" prefHeight="24.0" prefWidth="172.0" promptText="MM/DD/YY" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <RadioButton layoutX="360.0" layoutY="182.0" mnemonicParsing="false" text="Male">
+            <TextField fx:id="email" layoutX="360.0" layoutY="107.0" promptText="usename" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <DatePicker fx:id="dob" layoutX="360.0" layoutY="149.0" prefHeight="24.0" prefWidth="172.0" promptText="MM/DD/YY" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <RadioButton layoutX="360.0" layoutY="182.0" mnemonicParsing="false" selected="true" text="Male">
                <toggleGroup>
                   <ToggleGroup fx:id="gender" />
                </toggleGroup>
             </RadioButton>
             <RadioButton layoutX="460.0" layoutY="182.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
-            <PasswordField layoutX="360.0" layoutY="245.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <PasswordField fx:id="rcpass" layoutX="360.0" layoutY="245.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
             <FontAwesomeIconView glyphName="LOCK" layoutX="332.0" layoutY="264.0" size="18" />
             <FontAwesomeIconView glyphName="MALE" layoutX="331.0" layoutY="197.0" size="18">
                <font>
