@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="modify project structure">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_1_2023_11_11_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_1_2023_11_11_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashbord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashbord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

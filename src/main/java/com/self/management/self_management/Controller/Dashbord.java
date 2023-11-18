@@ -12,6 +12,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
@@ -78,15 +79,17 @@ public class Dashbord{
         }
 
 
-    public void onPrassed(ActionEvent event) {
-        xOffset = ((Node)event.getSource()).getScene().getX();
-        yOffset =  ((Node)event.getSource()).getScene().getY();
+    public void onPrassed(MouseEvent event) {
+        xOffset = event.getScreenX();
+        yOffset =  event.getScreenY();
     }
-    public void onDrage(ActionEvent event) {
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setX(root.getLayoutX() - xOffset);
-        stage.setY(root.getLayoutY() - yOffset);
+    public void onDrage(MouseEvent event) {
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setX(event.getScreenX() - xOffset);
+        stage.setY(event.getScreenY() - yOffset);
     }
+
+
 }
 
 
