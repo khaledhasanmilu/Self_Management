@@ -18,8 +18,8 @@
    <children>
       <Pane fx:id="Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" visible="false">
          <children>
-            <TextField fx:id="luser" layoutX="360.0" layoutY="146.0" promptText="username" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <PasswordField fx:id="lpass" layoutX="360.0" layoutY="210.0" promptText="password" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <TextField fx:id="luser" layoutX="360.0" layoutY="146.0" promptText="Username" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <PasswordField fx:id="lpass" layoutX="360.0" layoutY="210.0" promptText="Password" styleClass="inputField" stylesheets="@../CSS/login.css" />
             <Button id="button" layoutX="410.0" layoutY="264.0" mnemonicParsing="false" onAction="#onLogin" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Log In" />
             <FontAwesomeIconView glyphName="USER" layoutX="330.0" layoutY="164.0" size="18">
                <font>
@@ -37,14 +37,14 @@
                   <AnchorPane layoutY="-6.0" prefHeight="404.0" prefWidth="200.0" styleClass="leftContainer" stylesheets="@../CSS/login.css" />
                </children>
             </Pane>
-            <Hyperlink fx:id="regilink" layoutX="322.0" layoutY="327.0" onAction="#onRegistrationLink" text="Don't have a account? go to sinup" />
+            <Hyperlink fx:id="regilink" layoutX="322.0" layoutY="327.0" onAction="#onRegistrationLink" prefHeight="24.0" prefWidth="222.0" text="Don't have an account? Go to sinup." />
          </children>
       </Pane>
       <Pane fx:id="Registration" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
             <TextField fx:id="runame" layoutX="360.0" layoutY="64.0" promptText="Username" style="-fx-border-radius: 5px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
             <PasswordField fx:id="rpass" layoutX="360.0" layoutY="210.0" promptText="Password" style="-fx-border-radius: 5px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <Button id="button" layoutX="400.0" layoutY="315.0" mnemonicParsing="false" onAction="#onRegibtn" prefHeight="18.0" prefWidth="59.0" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Submit" />
+            <Button id="button" layoutX="393.0" layoutY="322.0" mnemonicParsing="false" onAction="#onRegibtn" prefHeight="25.0" prefWidth="88.0" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Submit" />
             <FontAwesomeIconView glyphName="USER" layoutX="329.0" layoutY="83.0" size="18">
                <font>
                   <Font size="35.0" />
@@ -83,9 +83,9 @@
             </FontAwesomeIconView>
             <FontAwesomeIconView glyphName="ENVELOPE" layoutX="331.0" layoutY="125.0" />
             <FontAwesomeIconView glyphName="FEMALE" layoutX="435.0" layoutY="197.0" size="18" />
-            <Hyperlink fx:id="loginlink" layoutX="410.0" layoutY="348.0" onAction="#onLoginlink" text="Already have an account?Login" />
-            <CheckBox layoutX="329.0" layoutY="289.0" mnemonicParsing="false" prefHeight="12.0" prefWidth="200.0" text="I have read terms and conditions." />
-            <Label layoutX="300.0" layoutY="11.0" text="User Registration">
+            <Hyperlink fx:id="loginlink" layoutX="344.0" layoutY="356.0" onAction="#onLoginlink" prefHeight="30.0" prefWidth="233.0" text="Already have an account?Login" />
+            <CheckBox layoutX="329.0" layoutY="289.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="260.0" text="I have read terms and conditions." />
+            <Label layoutX="300.0" layoutY="11.0" text="User Registration" textAlignment="RIGHT">
                <font>
                   <Font size="20.0" />
                </font>

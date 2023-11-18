@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="modify project structure">
+    <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashbord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/dashbord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/dashbord.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashbord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,12 +23,31 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Khaled hasan &lt;khmilu338@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="new" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "khaledhasanmilu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="928deab0-4416-44bb-8955-d862b167b315" />
+        <option name="url" value="https://github.com/khaledhasanmilu/Self_Management.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -136,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698876840861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hey..now i change registration pages some icon and tools.">
+      <option name="closed" value="true" />
+      <created>1700332143129</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700332143129</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -170,6 +195,7 @@
     <MESSAGE value="adding preloader page" />
     <MESSAGE value="adding some css in login screen" />
     <MESSAGE value="modify project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify project structure" />
+    <MESSAGE value="hey..now i change registration pages some icon and tools." />
+    <option name="LAST_COMMIT_MESSAGE" value="hey..now i change registration pages some icon and tools." />
   </component>
 </project>
