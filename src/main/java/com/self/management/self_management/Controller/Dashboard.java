@@ -8,40 +8,43 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class Dashbord{
-    @FXML
-    public static BorderPane root;
-    private static double xOffset = 0;
-    private static double yOffset = 0;
-
-
+public class Dashboard {
+         @FXML
+         public BorderPane borderPane;
+         private static double xOffset = 0;
+         private static double yOffset = 0;
         @FXML
         private AnchorPane dashBord;
+    @FXML
+    private Button maximize;
+    @FXML
+    private Button minimize;
 
         @FXML
         private AnchorPane logOut;
 
         @FXML
-        private AnchorPane messege;
+        private AnchorPane message;
 
         @FXML
         private AnchorPane toolBox;
         private static Stage stage;
         @FXML
-        void onClose(ActionEvent event) {
+        void onClose() {
         System.exit(0);
         }
 
         @FXML
-        void onDashbord(ActionEvent event) {
-            messege.setVisible(false);
+        void onDashboard() {
+            message.setVisible(false);
             dashBord.setVisible(true);
             toolBox.setVisible(false);
             logOut.setVisible(false);
@@ -57,36 +60,53 @@ public class Dashbord{
         }
 
         @FXML
-        void onMessege(ActionEvent event) {
-            messege.setVisible(true);
+        void onMessage() {
+            message.setVisible(true);
             dashBord.setVisible(false);
             toolBox.setVisible(false);
             logOut.setVisible(false);
         }
 
         @FXML
-        void onMinimize(ActionEvent event) {
+        void onMinimize() {
             Stage stage = (Stage) toolBox.getParent().getScene().getWindow();
             stage.setIconified(true);
         }
         @FXML
-        void onToolBox(ActionEvent event) {
-            messege.setVisible(false);
+        void onToolBox() {
+            message.setVisible(false);
             dashBord.setVisible(false);
             toolBox.setVisible(true);
             logOut.setVisible(false);
         }
-
-
-    public void onPrassed(ActionEvent event) {
-        xOffset = ((Node)event.getSource()).getScene().getX();
-        yOffset =  ((Node)event.getSource()).getScene().getY();
+        @FXML
+    public void onPressed(MouseEvent event) {
+        xOffset = event.getScreenX();
+        yOffset =  event.getSceneY();
     }
-    public void onDrage(ActionEvent event) {
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setX(root.getLayoutX() - xOffset);
-        stage.setY(root.getLayoutY() - yOffset);
+    @FXML
+    public void onDrag() {
+            stage = (Stage) borderPane.getScene().getWindow();
+            borderPane.setOnMouseDragged(event -> {
+                stage.setX(event.getScreenX() - xOffset);
+                stage.setY(event.getScreenY() - yOffset);
+            });
+        }
+    @FXML
+    private void onMaxiMaze(){
+            stage = (Stage)borderPane.getScene().getWindow();
+            maximize.setVisible(false);
+            minimize.setVisible(true);
+            stage.setFullScreen(true);
     }
+    @FXML
+    private void onExitFull(){
+        stage = (Stage)borderPane.getScene().getWindow();
+        maximize.setVisible(true);
+        minimize.setVisible(false);
+        stage.setFullScreen(false);
+    }
+
 }
 
 

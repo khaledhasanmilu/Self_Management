@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#onDrage" onMousePressed="#onPrassed" prefHeight="560.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Dashbord">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#onDrag" onMousePressed="#onPressed" prefHeight="560.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Dashboard">
    <center>
       <AnchorPane disable="true" prefHeight="553.0" prefWidth="777.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane fx:id="toolBox" prefHeight="543.0" prefWidth="820.0">
+            <AnchorPane fx:id="toolBox" prefHeight="543.0" prefWidth="820.0" visible="false">
                <children>
                   <Text layoutX="322.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toll Box Page" />
                </children></AnchorPane>
@@ -18,11 +18,11 @@
                <children>
                   <Text layoutX="301.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log Out Page" />
                </children></AnchorPane>
-            <AnchorPane fx:id="messege" layoutX="12.0" layoutY="4.0" prefHeight="539.0" prefWidth="814.0" visible="false">
+            <AnchorPane fx:id="message" layoutX="12.0" layoutY="4.0" prefHeight="539.0" prefWidth="814.0" visible="false">
                <children>
                   <Text layoutX="295.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messege" />
                </children></AnchorPane>
-            <AnchorPane fx:id="dashBord" layoutY="7.0" prefHeight="543.0" prefWidth="820.0" visible="false">
+            <AnchorPane fx:id="dashBord" layoutY="7.0" prefHeight="543.0" prefWidth="820.0">
                <children>
                   <Text layoutX="237.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBord" />
                </children>
@@ -33,6 +33,11 @@
    <top>
       <AnchorPane prefHeight="20.0" prefWidth="977.0" stylesheets="@../CSS/login.css" BorderPane.alignment="CENTER">
          <children>
+            <Button fx:id="maximize" layoutX="875.0" mnemonicParsing="false" onAction="#onMaxiMaze" styleClass="close" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="EXPAND" />
+               </graphic>
+            </Button>
             <Button layoutX="902.0" mnemonicParsing="false" onAction="#onMinimize" prefHeight="13.0" prefWidth="29.0" styleClass="close" stylesheets="@../CSS/login.css">
                <graphic>
                   <FontAwesomeIconView glyphName="MINUS" />
@@ -43,14 +48,19 @@
                   <FontAwesomeIconView glyphName="CLOSE" />
                </graphic>
             </Button>
+            <Button fx:id="minimize" layoutX="875.0" mnemonicParsing="false" onAction="#onExitFull" styleClass="close" stylesheets="@../CSS/login.css" visible="false">
+               <graphic>
+                  <FontAwesomeIconView glyphName="EXPAND" />
+               </graphic>
+            </Button>
          </children>
       </AnchorPane>
    </top>
    <left>
       <AnchorPane prefHeight="536.0" prefWidth="157.0" style="-fx-background-color: #8d3232;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="53.0" layoutY="137.0" mnemonicParsing="false" onAction="#onDashbord" text="Dashbord" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
-            <Button layoutX="53.0" layoutY="186.0" mnemonicParsing="false" onAction="#onMessege" text="Messege" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <Button layoutX="53.0" layoutY="137.0" mnemonicParsing="false" onAction="#onDashboard" text="Dashbord" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <Button layoutX="53.0" layoutY="186.0" mnemonicParsing="false" onAction="#onMessage" text="Messege" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
             <Button layoutX="53.0" layoutY="268.0" mnemonicParsing="false" onAction="#onToolBox" text="Tool Box" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
             <Button layoutX="53.0" layoutY="340.0" mnemonicParsing="false" onAction="#onLogOut" text="Log Out" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
          </children>

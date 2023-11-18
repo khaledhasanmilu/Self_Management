@@ -69,8 +69,9 @@ public class loginController {
                 stage.setScene(scene);
                 stage.show();
             }
-            else {
-                System.out.println("Invalid user password");
+            else{
+                System.out.println("Invalid Password!!");
+
             }
         }catch (SQLException ev){
             System.out.println("Connection Error!!");
