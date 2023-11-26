@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.News">
+   <children>
+      <WebView fx:id="webView" prefHeight="571.3333333333334" prefWidth="824.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="mainPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="571.3333333333334" prefWidth="824.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="close" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MINUS" />
+               </graphic>
+            </Button>
+            <Button layoutX="798.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" />
+               </graphic>
+            </Button>
+            <Button layoutX="59.0" layoutY="69.0" mnemonicParsing="false" onAction="#onProthomalo" prefHeight="128.0" prefWidth="200.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/prothom_alo-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="317.0" layoutY="67.0" mnemonicParsing="false" onAction="#onDailyStar" prefHeight="128.0" prefWidth="200.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="114.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/The_Daily_Star_logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="575.0" layoutY="71.0" mnemonicParsing="false" onAction="#onJugantor" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="114.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/jugantor-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="50.0" layoutY="245.0" mnemonicParsing="false" onAction="#onBonikBatra" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="304.0" layoutY="242.0" mnemonicParsing="false" onAction="#onBdProtidin" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Bangladesh_Pratidin-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="575.0" layoutY="242.0" mnemonicParsing="false" onAction="#onInkilab" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/inkilab-removebg.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="40.0" layoutY="402.0" mnemonicParsing="false" onAction="#onSomokal" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/download-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="304.0" layoutY="402.0" mnemonicParsing="false" onAction="#onNoyaDiganta" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Noya%20diganta.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="575.0" layoutY="402.0" mnemonicParsing="false" onAction="#onJanakanta" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/download-removebg-preview%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

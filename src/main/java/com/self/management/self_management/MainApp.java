@@ -16,6 +16,7 @@ import java.io.IOException;
 public class MainApp extends Application {
     private static double xOffset = 0;
     private static double yOffset = 0;
+    public static Stage sStage;
     @Override
     public void init() throws Exception {
         initPreloader init = new initPreloader();
@@ -30,7 +31,7 @@ public class MainApp extends Application {
         stage.setTitle("Hello!");
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
-
+        sStage=stage;
         root.setOnMousePressed(event -> {
             xOffset = event.getSceneX();
             yOffset = event.getSceneY();

@@ -5,9 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Background.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Eticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/News.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Note.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Shooping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToolBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Model/CustomAlert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Background.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Dashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Eticket.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Message.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/News.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Note.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Shooping.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/ToDo.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/ToolBox.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_13_2023_3_36_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_13_2023_3_36_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashbord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashbord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Preloader/initPreloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Preloader/initPreloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/CSS/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/CSS/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/dashbord.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/logo.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +64,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "khaledhasanmilu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;khaledhasanmilu&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>

@@ -69,7 +69,7 @@ public class initPreloader implements Initializable {
                 Platform.runLater(() -> progressBar1.setProgress(value));
                 value=value+0.01;
                 try {
-                    Thread.sleep(60);
+                    Thread.sleep(5);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }

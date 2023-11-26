@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#onDrage" onMousePressed="#onPrassed" prefHeight="654.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Background">
+   <left>
+      <AnchorPane prefHeight="545.0" prefWidth="195.0" styleClass="leftContainer" stylesheets="@../CSS/login.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="-1.0" layoutY="167.0" mnemonicParsing="false" onAction="#onDashboard" prefHeight="36.0" prefWidth="228.0" styleClass="btn" stylesheets="@../CSS/login.css" text="Dashboard">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="1.0" layoutY="326.0" mnemonicParsing="false" onAction="#onMessage" prefHeight="35.0" prefWidth="229.0" styleClass="btn" text="Message">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Button>
+            <Button layoutX="2.0" layoutY="369.0" mnemonicParsing="false" onAction="#onNews" prefHeight="31.0" prefWidth="229.0" styleClass="btn" text="News Paper">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Button>
+            <Button layoutX="2.0" layoutY="408.0" mnemonicParsing="false" onAction="#onShooping" prefHeight="35.0" prefWidth="229.0" styleClass="btn" text="Shooping">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Button>
+            <Button layoutX="53.0" layoutY="544.0" mnemonicParsing="false" onAction="#onLogout" prefHeight="25.0" prefWidth="135.0" styleClass="logoutbtn" stylesheets="@../CSS/login.css" text="Log out" textFill="#170606">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font></Button>
+            <Circle accessibleRole="IMAGE_VIEW" fill="DODGERBLUE" layoutX="118.0" layoutY="67.0" radius="39.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: transparent;" />
+            <Button layoutX="2.0" layoutY="451.0" mnemonicParsing="false" onAction="#onEticket" prefHeight="35.0" prefWidth="229.0" styleClass="btn" text="E-Ticket">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Button>
+            <Button layoutX="-1.0" layoutY="250.0" mnemonicParsing="false" onAction="#onToDo" prefHeight="30.0" prefWidth="231.0" styleClass="btn" stylesheets="@../CSS/login.css" text="To Do">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Button>
+            <Button layoutY="210.0" mnemonicParsing="false" onAction="#onToolBox" prefHeight="33.0" prefWidth="229.0" styleClass="btn" stylesheets="@../CSS/login.css" text="Toll Box">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Button>
+            <Button layoutX="-2.0" layoutY="287.0" mnemonicParsing="false" onAction="#onNote" prefHeight="33.0" prefWidth="233.0" styleClass="btn" stylesheets="@../CSS/login.css" text="Note ">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></Button>
+            <Label fx:id="user" layoutX="14.0" layoutY="114.0" text="User : " textFill="#331919">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="14.0" layoutY="139.0" text="Email :">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

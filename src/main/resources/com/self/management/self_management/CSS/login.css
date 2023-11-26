@@ -7,7 +7,7 @@
     -fx-border-color: rgb(24, 116, 142);
 }
 .inputBtn {
-    -fx-background-color: rgba(190, 190, 216, 0.498);
+    -fx-background-color: #9bcdff;
     -fx-background-radius:10px;
     -fx-border-radius:10px;
 
@@ -19,7 +19,7 @@
 }
 
 .leftContainer{
-    -fx-background-color: rgba(5, 0, 0, 0.836);
+    -fx-background-color:  #EBE8F9;
 }
 .close{
     -fx-background-color:transparent;
@@ -28,4 +28,32 @@
 .close:hover{
 -fx-background-color:red;
 -fx-cursor:hand;
+}
+
+.btn
+{
+-fx-background-color : transparent;
+-fx-text-fill : black;
+}
+.btn:hover{
+-fx-background-color : #9bcdff;
+}
+.btn:pressed
+{
+-fx-background-color : #1620A1;
+}
+ .logoutbtn{
+ -fx-background-color:#b82323;
+ }
+.logoutbtn:hover{
+-fx-background-color:red;
+-fx-cursor:hand;
+}
+.btn:active{
+-fx-background-color : #1620A1;
+}
+.card{
+-fx-background-radius:15px;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+-fx-border-width: 196;
 }
