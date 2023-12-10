@@ -2,19 +2,118 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="514.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Eticket">
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Eticket">
    <children>
-      <Button layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="close" stylesheets="@../CSS/login.css">
-         <graphic>
-            <FontAwesomeIconView glyphName="MINUS" />
-         </graphic>
-      </Button>
-      <Button layoutX="798.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
-         <graphic>
-            <FontAwesomeIconView glyphName="CLOSE" />
-         </graphic>
-      </Button>
+      <WebView fx:id="webView" prefHeight="637.3333333333334" prefWidth="834.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="mainPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="624.0" prefWidth="831.0" stylesheets="@../CSS/login.css">
+         <children>
+            <ImageView fitHeight="461.0" fitWidth="831.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/832979e81a3cc16cc42973188688f15a.gif" />
+               </image>
+            </ImageView>
+            <Button layoutX="1.0" layoutY="458.0" mnemonicParsing="false" onAction="#onTicket" prefHeight="179.0" prefWidth="379.0" styleClass="btn">
+               <graphic>
+                  <ImageView fitHeight="437.0" fitWidth="389.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/hotel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="405.0" layoutY="458.0" mnemonicParsing="false" onAction="#onHotel" prefHeight="179.0" prefWidth="419.0" styleClass="btn">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/tic.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="37.0" layoutY="232.0" text="Let's Explore Your Life." textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="hotelPane" prefHeight="637.3333333333334" prefWidth="831.3333333333334" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="ticketPane" layoutX="10.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="637.3333333333334" prefWidth="834.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="close" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MINUS" />
+               </graphic>
+            </Button>
+            <Button layoutX="798.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" />
+               </graphic>
+            </Button>
+            <Button layoutX="59.0" layoutY="147.0" mnemonicParsing="false" onAction="#onBus" prefHeight="128.0" prefWidth="200.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Bus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="317.0" layoutY="36.0" mnemonicParsing="false" onAction="#onTrain" prefHeight="128.0" prefWidth="200.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="114.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Train.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="576.0" layoutY="147.0" mnemonicParsing="false" onAction="#onAir" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="114.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Air.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="51.0" layoutY="314.0" mnemonicParsing="false" onAction="#onShip" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Ship.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="309.0" layoutY="443.0" mnemonicParsing="false" onAction="#onUber" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Uber.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="576.0" layoutY="315.0" mnemonicParsing="false" onAction="#onObhai" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="84.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/uber_final.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutY="2.0" mnemonicParsing="false" onAction="#onBacktoTicket" style="-fx-background-color: transparent; -fx-border-color: black;" text="Back" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

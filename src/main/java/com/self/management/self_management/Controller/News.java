@@ -53,11 +53,11 @@ public class News {
         WebEngine wb = webView.getEngine();
         wb.load("https://www.ebdpratidin.com/");
     }
-    public void onInkilab(){
+    public void onIttefaq(){
         mainPane.setVisible(false);
         webView.setVisible(true);
         WebEngine wb = webView.getEngine();
-        wb.load("https://dailyinqilab.com/");
+        wb.load("https://www.ittefaq.com.bd/");
     }
     public void onSomokal(){
         mainPane.setVisible(false);

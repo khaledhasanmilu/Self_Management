@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="50.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.TodayTask">
+   <effect>
+      <DropShadow>
+         <color>
+            <Color red="0.040300000458955765" green="0.3100000023841858" blue="0.18413999676704407" opacity="0.5" />
+         </color>
+      </DropShadow>
+   </effect>
+   <children>
+      <HBox alignment="CENTER" layoutX="9.0" layoutY="4.0" prefHeight="45.0" prefWidth="357.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="305.0">
+               <children>
+                  <Label fx:id="taskTitle" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="305.0" text="Project Update">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fx:id="taskIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/inprogress.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</Pane>

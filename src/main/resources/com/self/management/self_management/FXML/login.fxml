@@ -10,86 +10,186 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.loginController">
    <children>
-      <Pane fx:id="Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+      <Pane fx:id="Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d5553;">
          <children>
-            <TextField fx:id="luser" layoutX="360.0" layoutY="146.0" promptText="Username" style="-fx-border-radius: 20px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <PasswordField fx:id="lpass" layoutX="360.0" layoutY="210.0" promptText="Password" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <Button id="button" layoutX="410.0" layoutY="264.0" mnemonicParsing="false" onAction="#onLogin" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Log In" />
-            <FontAwesomeIconView glyphName="USER" layoutX="330.0" layoutY="164.0" size="18">
+            <TextField fx:id="luser" layoutX="359.0" layoutY="121.0" prefHeight="28.0" prefWidth="161.0" promptText="Username" style="-fx-border-radius: 20px; -fx-background-color: transparent; -fx-border-color: #989898;" styleClass="inputField" />
+            <PasswordField fx:id="lpass" layoutX="360.0" layoutY="172.0" prefHeight="28.0" prefWidth="161.0" promptText="Password" style="-fx-border-color: #989898;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <Button id="button" layoutX="364.0" layoutY="230.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="25.0" prefWidth="151.0" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Log In" />
+            <FontAwesomeIconView fill="#989898" glyphName="USER" layoutX="329.0" layoutY="141.0" size="18">
                <font>
                   <Font size="35.0" />
                </font>
             </FontAwesomeIconView>
-            <FontAwesomeIconView glyphName="LOCK" layoutX="330.0" layoutY="228.0" size="18" />
+            <FontAwesomeIconView fill="#989898" glyphName="LOCK" layoutX="329.0" layoutY="192.0" size="18" />
             <Button layoutX="572.0" layoutY="2.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
                <graphic>
-                  <FontAwesomeIconView glyphName="CLOSE" styleClass="close" />
+                  <FontAwesomeIconView fill="#cccccc" glyphName="CLOSE" styleClass="close" />
                </graphic>
             </Button>
-            <Pane layoutY="2.0">
+            <Pane layoutY="2.0" prefHeight="434.0" prefWidth="249.0">
                <children>
-                  <AnchorPane layoutY="-6.0" prefHeight="404.0" prefWidth="200.0" styleClass="leftContainer" stylesheets="@../CSS/login.css" />
+                  <AnchorPane layoutY="-1.0" prefHeight="400.0" prefWidth="211.0" style="-fx-background-color: #113838;" styleClass="leftContainer" stylesheets="@../CSS/login.css">
+                     <children>
+                        <ImageView fitHeight="382.0" fitWidth="211.0" layoutY="9.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../IMG/logopg.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
                </children>
             </Pane>
-            <Hyperlink fx:id="regilink" layoutX="322.0" layoutY="327.0" onAction="#onRegistrationLink" prefHeight="24.0" prefWidth="222.0" text="Don't have an account? Go to sinup." />
+            <Hyperlink fx:id="regilink" layoutX="341.0" layoutY="312.0" onAction="#onRegistrationLink" prefHeight="24.0" prefWidth="222.0" text="Don't have an account? Register." />
+            <Hyperlink layoutX="416.0" layoutY="266.0" onAction="#onForgot" prefHeight="17.0" prefWidth="105.0" text="Forgot Password?" textFill="#989898" />
          </children>
       </Pane>
-      <Pane fx:id="Registration" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" visible="false">
+      <Pane fx:id="Registration" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1e5957;" visible="false">
          <children>
-            <TextField fx:id="runame" layoutX="360.0" layoutY="64.0" promptText="Username" style="-fx-border-radius: 5px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <PasswordField fx:id="rpass" layoutX="360.0" layoutY="210.0" promptText="Password" style="-fx-border-radius: 5px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <TextField fx:id="runame" layoutX="360.0" layoutY="64.0" promptText="Username" style="-fx-border-radius: 5px; -fx-border-color: #a6adb1;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <PasswordField fx:id="rpass" layoutX="360.0" layoutY="210.0" promptText="Password" style="-fx-border-radius: 5px; -fx-border-color: #a6adb1;" styleClass="inputField" stylesheets="@../CSS/login.css" />
             <Button id="button" layoutX="393.0" layoutY="322.0" mnemonicParsing="false" onAction="#onRegibtn" prefHeight="25.0" prefWidth="88.0" styleClass="inputBtn" stylesheets="@../CSS/login.css" text="Submit" />
-            <FontAwesomeIconView glyphName="USER" layoutX="329.0" layoutY="83.0" size="18">
+            <FontAwesomeIconView fill="#a6adb1" glyphName="USER" layoutX="329.0" layoutY="83.0" size="18">
                <font>
                   <Font size="35.0" />
                </font>
             </FontAwesomeIconView>
-            <FontAwesomeIconView glyphName="LOCK" layoutX="330.0" layoutY="228.0" size="18" />
+            <FontAwesomeIconView fill="#a6adb1" glyphName="LOCK" layoutX="330.0" layoutY="228.0" size="18" />
             <Button layoutX="572.0" layoutY="2.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
                <graphic>
-                  <FontAwesomeIconView glyphName="CLOSE" styleClass="close" />
+                  <FontAwesomeIconView fill="#a6adb1" glyphName="CLOSE" styleClass="close" />
                </graphic>
             </Button>
             <Pane layoutY="2.0">
                <children>
-                  <AnchorPane layoutY="-6.0" prefHeight="404.0" prefWidth="200.0" styleClass="leftContainer" stylesheets="@../CSS/login.css" />
+                  <AnchorPane layoutY="-6.0" prefHeight="404.0" prefWidth="200.0" style="-fx-background-color: #113838;" styleClass="leftContainer" stylesheets="@../CSS/login.css">
+                     <children>
+                        <ImageView fitHeight="400.0" fitWidth="200.0" layoutY="6.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../IMG/logopg.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
                </children>
             </Pane>
-            <TextField fx:id="email" layoutX="360.0" layoutY="107.0" promptText="Email" style="-fx-border-radius: 5px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <DatePicker fx:id="dob" layoutX="364.0" layoutY="149.0" prefHeight="18.0" prefWidth="151.0" promptText="MM/DD/YY" style="-fx-border-radius: 5px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <RadioButton layoutX="360.0" layoutY="182.0" mnemonicParsing="false" selected="true" text="Male">
+            <TextField fx:id="email" layoutX="360.0" layoutY="107.0" promptText="Email" style="-fx-border-radius: 5px; -fx-border-color: #a6adb1;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <DatePicker fx:id="dob" layoutX="364.0" layoutY="149.0" prefHeight="18.0" prefWidth="151.0" promptText="MM/DD/YY" style="-fx-border-radius: 5px; -fx-background-color: transparent; -fx-border-color: #a6adb1;" stylesheets="@../CSS/login.css" />
+            <RadioButton layoutX="360.0" layoutY="182.0" mnemonicParsing="false" selected="true" text="Male" textFill="#a6adb1">
                <toggleGroup>
                   <ToggleGroup fx:id="gender" />
                </toggleGroup>
             </RadioButton>
-            <RadioButton layoutX="460.0" layoutY="182.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
-            <PasswordField fx:id="rcpass" layoutX="360.0" layoutY="245.0" promptText="Confirm Password" style="-fx-border-radius: 5px;" styleClass="inputField" stylesheets="@../CSS/login.css" />
-            <FontAwesomeIconView glyphName="LOCK" layoutX="332.0" layoutY="264.0" size="18" />
-            <FontAwesomeIconView glyphName="MALE" layoutX="331.0" layoutY="197.0" size="18">
+            <RadioButton layoutX="460.0" layoutY="182.0" mnemonicParsing="false" text="Female" textFill="#a6adb1" toggleGroup="$gender" />
+            <PasswordField fx:id="rcpass" layoutX="360.0" layoutY="245.0" promptText="Confirm Password" style="-fx-border-radius: 5px; -fx-border-color: #a6adb1;" styleClass="inputField" stylesheets="@../CSS/login.css" />
+            <FontAwesomeIconView fill="#a6adb1" glyphName="LOCK" layoutX="332.0" layoutY="264.0" size="18" />
+            <FontAwesomeIconView fill="#a6adb1" glyphName="MALE" layoutX="331.0" layoutY="197.0" size="18">
                <font>
                   <Font size="35.0" />
                </font>
             </FontAwesomeIconView>
-            <FontAwesomeIconView glyphName="USER" layoutX="329.0" layoutY="164.0" size="18">
+            <FontAwesomeIconView fill="#a6adb1" glyphName="USER" layoutX="329.0" layoutY="164.0" size="18">
                <font>
                   <Font size="35.0" />
                </font>
             </FontAwesomeIconView>
-            <FontAwesomeIconView glyphName="ENVELOPE" layoutX="331.0" layoutY="125.0" />
-            <FontAwesomeIconView glyphName="FEMALE" layoutX="435.0" layoutY="197.0" size="18" />
+            <FontAwesomeIconView fill="#a6adb1" glyphName="ENVELOPE" layoutX="331.0" layoutY="125.0" />
+            <FontAwesomeIconView fill="#a6adb1" glyphName="FEMALE" layoutX="435.0" layoutY="197.0" size="18" />
             <Hyperlink fx:id="loginlink" layoutX="344.0" layoutY="356.0" onAction="#onLoginlink" prefHeight="30.0" prefWidth="233.0" text="Already have an account?Login" />
-            <CheckBox layoutX="329.0" layoutY="289.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="261.0" text="I have read terms and conditions." />
-            <Label layoutX="300.0" layoutY="11.0" text="User Registration" textAlignment="RIGHT">
+            <CheckBox layoutX="329.0" layoutY="289.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="261.0" text="I have read terms and conditions." textFill="#1386c8" />
+            <Label layoutX="329.0" layoutY="12.0" text="User Registration" textAlignment="RIGHT" textFill="#bbc8d0">
                <font>
-                  <Font size="20.0" />
+                  <Font name="Eras Bold ITC" size="24.0" />
                </font>
             </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="otpPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d5553;" visible="false">
+         <children>
+            <Button layoutX="251.0" layoutY="241.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: white; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="submit">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <TextField fx:id="otp" layoutX="185.0" layoutY="172.0" prefHeight="25.0" prefWidth="230.0" style="-fx-background-color: white; -fx-background-radius: 20px; -fx-border-color: black; -fx-border-radius: 20px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect></TextField>
+            <Label layoutX="137.0" layoutY="109.0" prefHeight="20.0" prefWidth="352.0" text="Please check your gmail and enter otp here." textFill="#d2d2d2">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="KEY" />
+         </children>
+      </Pane>
+      <Pane fx:id="restePass" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d5553;" visible="false">
+         <children>
+            <Label layoutX="160.0" layoutY="120.0" text="New Password" textFill="#f4eded">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font></Label>
+            <PasswordField fx:id="newPass" layoutX="276.0" layoutY="116.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-radius: 20px;" />
+            <PasswordField fx:id="cnewpass" layoutX="276.0" layoutY="179.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-radius: 20px;" />
+            <Label layoutX="115.0" layoutY="183.0" text="Confirm New Password" textFill="#fff7f7">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font></Label>
+            <Button layoutX="327.0" layoutY="229.0" mnemonicParsing="false" onAction="#OnnewPassbtn" prefHeight="25.0" prefWidth="98.0" style="-fx-background-radius: 20px; -fx-background-color: white;" text="Confirm">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Label layoutX="184.0" layoutY="41.0" prefHeight="36.0" prefWidth="292.0" text="Setting up new Password " textFill="#d4cfcf">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="mailSearch" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d5553;" visible="false">
+         <children>
+            <TextField fx:id="searchMail" layoutX="191.0" layoutY="175.0" prefHeight="25.0" prefWidth="240.0" promptText="Email" style="-fx-background-radius: 20px;" />
+            <Button layoutX="253.0" layoutY="222.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Search">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5" />
+                     </color></DropShadow>
+               </effect></Button>
+            <TextField fx:id="searchUser" layoutX="191.0" layoutY="129.0" prefHeight="25.0" prefWidth="240.0" promptText="User Name" style="-fx-background-radius: 20px; -fx-background-color: white;" />
+            <Label layoutX="131.0" layoutY="21.0" prefHeight="64.0" prefWidth="338.0" text="Recover Your  Password" textFill="#efefef">
+               <font>
+                  <Font name="Georgia Bold" size="26.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#c9c5c5" glyphName="USER" layoutX="149.0" layoutY="145.0" size="15" wrappingWidth="12.857142448425293">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="#d4d1d1" glyphName="ENVELOPE" layoutX="149.0" layoutY="191.0" size="15">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </FontAwesomeIconView>
          </children>
       </Pane>
    </children>

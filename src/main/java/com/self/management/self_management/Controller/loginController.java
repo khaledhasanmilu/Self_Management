@@ -1,13 +1,15 @@
 package com.self.management.self_management.Controller;
 
+import com.mailjet.client.errors.MailjetException;
+import com.mailjet.client.errors.MailjetSocketTimeoutException;
 import com.self.management.self_management.DB;
 import com.self.management.self_management.MainApp;
 import com.self.management.self_management.Model.CustomAlert;
+import com.self.management.self_management.Model.OtpModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
@@ -20,6 +22,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.Random;
+
 
 public class loginController {
     public static String username;
@@ -40,7 +44,21 @@ public class loginController {
     private PasswordField rcpass;
     @FXML
     private PasswordField rpass;
+    @FXML
+    private PasswordField cnewpass;
+    @FXML
+    private PasswordField newPass;
+    @FXML
+    private Pane restePass;
+    @FXML
+    private Pane mailSearch;
+    @FXML
+    private TextField searchMail;
+    @FXML
+    private TextField searchUser;
 
+    @FXML
+    private TextField otp;
     @FXML
     private TextField runame;
     @FXML
@@ -49,6 +67,19 @@ public class loginController {
     private PasswordField lpass;
     @FXML
     private TextField luser;
+    @FXML
+    private Pane otpPane;
+    private String randomOtp;
+    int checker;
+
+    ///for local use
+    String uname ;
+    String Email ;
+    LocalDate Dob ;
+    String Gender ;
+    String password ;
+    String userFromSearch;
+    String emailFromSearch;
     @FXML
     protected void onClose() {System.exit(0);
     }
@@ -69,6 +100,8 @@ public class loginController {
             if(rst.next()){
                 BorderPane root = FXMLLoader.load(MainApp.class.getResource("FXML/Background.fxml"));
                 Stage stage = (Stage)( (Node)e.getSource()).getScene().getWindow();
+                stage.setX(80);
+                stage.setY(30);
                 Scene scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
@@ -96,15 +129,19 @@ public class loginController {
         Registration.setVisible(false);
     }
     @FXML
-    protected void onRegibtn() throws SQLException {
+    protected void onRegibtn() throws SQLException, IOException {
         RadioButton rdbtn = (RadioButton) gender.getSelectedToggle();
-        String uname = runame.getText();
-        String Email = email.getText();
-        LocalDate Dob = dob.getValue();
-        String Gender = rdbtn.getText();
-        String password = rcpass.getText();
-
-        if(uname==null||Email==null||Dob==null||Gender==null||rpass.getText()==null||rcpass.getText()==null){
+        uname = runame.getText();
+        Email = email.getText();
+        Dob = dob.getValue();
+        Gender = rdbtn.getText();
+        password = rcpass.getText();
+        String mailsub = "Confirm your otp for Self Management";
+        System.out.println(uname);
+        System.out.println(Email);
+        System.out.println(Dob);
+        System.out.println(Gender);
+        if( uname.isEmpty() ||Email.isEmpty() ||Dob==null||Gender==null||rpass.getText().isEmpty()||rcpass.getText().isEmpty()){
             System.out.println("Must Fill up all field");
             new CustomAlert(Alert.AlertType.ERROR,"Please provide all Information","Registration Falid!","Faild!");
 
@@ -119,16 +156,28 @@ public class loginController {
 
             }else {
                 if(rpass.getText().equals(rcpass.getText())){
-                    String query = "INSERT INTO `userinfo`(`uname`, `email`, `dob`, `gender`, `password`) VALUES ('"+uname+"','"+Email+"','"+Dob+"','"+Gender+"','"+password+"')";
-                    pst = con.prepareStatement(query);
-                    if(pst.executeUpdate()>0){
-                        System.out.println("SuccessFully Registered");
-                        new CustomAlert(Alert.AlertType.ERROR,"Now you can log in.!!","Congratulationd!Successfully Registered","Registered!");
-                        Login.setVisible(true);
-                        Registration.setVisible(false);
-                    }else{
-                        System.out.println("An Error Accourd");
+//                    String query = "INSERT INTO `userinfo`(`uname`, `email`, `dob`, `gender`, `password`) VALUES ('"+uname+"','"+Email+"','"+Dob+"','"+Gender+"','"+password+"')";
+//                    pst = con.prepareStatement(query);
+//                    if(pst.executeUpdate()>0){
+//                        System.out.println("SuccessFully Registered");
+//                        new CustomAlert(Alert.AlertType.ERROR,"Now you can log in.!!","Congratulationd!Successfully Registered","Registered!");
+//                        Login.setVisible(true);
+//                        Registration.setVisible(false);
+//                    }else{
+//                        System.out.println("An Error Accourd");
+//                    }
+                    Registration.setVisible(false);
+                    checker=1;
+                    Random random = new Random();
+                    randomOtp  = String.format("%04d",random.nextInt(10000));
+                    OtpModel otpModel = new OtpModel();
+                    try {
+                        otpModel.SendOtp(randomOtp,Email,mailsub);
+                    } catch (MailjetSocketTimeoutException | MailjetException e) {
+                        throw new RuntimeException(e);
                     }
+
+                    otpPane.setVisible(true);
                 }else {
                     System.out.println("password and confirm password didn't match!!");
                     new CustomAlert(Alert.AlertType.ERROR,"Password and Confirm Password didn't match!!!","Please provide same password.","Failed!");
@@ -136,5 +185,106 @@ public class loginController {
             }
         }
 
+    }
+    @FXML
+    void OnnewPassbtn() throws SQLException {
+        String newp = newPass.getText();
+        String cnpass = cnewpass.getText();
+            if (newp.equals(cnpass)) {
+                String query = "UPDATE `userinfo` SET `password`='"+newp+"' WHERE `uname`='"+userFromSearch+"'";
+                pst = con.prepareStatement(query);
+                if (pst.executeUpdate() > 0) {
+                    System.out.println("SuccessFully Change Password");
+                    new CustomAlert(Alert.AlertType.ERROR, "Successfully change!!", "Congratulationd!Successfully Changed your Password!", "Password Changed");
+                    Login.setVisible(true);
+                    Registration.setVisible(false);
+                    otpPane.setVisible(false);
+                    restePass.setVisible(false);
+                }
+            }else {
+                System.out.println("pass and cpass didnt match");
+                new CustomAlert(Alert.AlertType.ERROR, "Didn't match", "Password and Confirm Password should be same.", "Password and Confirm Password didn't match");
+            }
+    }
+
+    @FXML
+    public void onSubmit() throws SQLException, MailjetSocketTimeoutException, MailjetException {
+        String Otp = otp.getText();
+        System.out.println(randomOtp);
+       if (checker==1){
+           if(randomOtp.equals(Otp)){
+               String query = "INSERT INTO `userinfo`(`uname`, `email`, `dob`, `gender`, `password`) VALUES ('"+uname+"','"+Email+"','"+Dob+"','"+Gender+"','"+password+"')";
+               pst = con.prepareStatement(query);
+               if(pst.executeUpdate()>0){
+                   System.out.println("SuccessFully Registered");
+                   new CustomAlert(Alert.AlertType.ERROR,"Now you can log in.!!","Congratulationd!Successfully Registered","Registered!");
+                   Login.setVisible(true);
+                   Registration.setVisible(false);
+                   otpPane.setVisible(false);
+               }else{
+                   System.out.println("An Error Accourd");
+
+               }
+           }else {
+               new CustomAlert(Alert.AlertType.ERROR,"Invalid","Please Enter a Valid Otp","Invalid OTP");
+           }
+       }else {
+           if(randomOtp.equals(Otp)){
+
+              otpPane.setVisible(false);
+
+              restePass.setVisible(true);
+           }else {
+               new CustomAlert(Alert.AlertType.ERROR,"Invalid","Please Enter a Valid Otp","Invalid OTP");
+           }
+       }
+    }
+    @FXML
+    void onForgot() {
+        Login.setVisible(false);
+        otpPane.setVisible(false);
+        Registration.setVisible(false);
+        mailSearch.setVisible(true);
+    }
+
+    @FXML
+    void onSearch() throws SQLException {
+        userFromSearch = searchUser.getText();
+        emailFromSearch = searchMail.getText();
+        try {
+            con = DB.getConnection();
+            if (con == null) {
+                throw new SQLException();
+            }
+            pst = con.prepareStatement("SELECT * FROM `userinfo` WHERE uname = ? and email =? ");
+            pst.setString(1, userFromSearch);
+            pst.setString(2, emailFromSearch);
+            rst = pst.executeQuery();
+            if(rst.next()){
+               mailSearch.setVisible(false);
+                Random random = new Random();
+                randomOtp  = String.format("%04d",random.nextInt(10000));
+                checker=-1;
+
+                OtpModel otpModel = new OtpModel();
+                String mailsub = "Reset Password OTP";
+
+                otpModel.SendOtp(randomOtp,emailFromSearch,mailsub);
+
+                System.out.println(randomOtp);
+                System.out.println(emailFromSearch);
+
+                otpPane.setVisible(true);
+            }
+            else{
+                System.out.println("Invalid User or Email");
+                new CustomAlert(Alert.AlertType.ERROR,"Invalid user","Please Enter a Valid Username and email","Invalid user or email");
+
+
+            }
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }

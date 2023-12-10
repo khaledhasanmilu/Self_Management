@@ -3,15 +3,15 @@ package com.self.management.self_management;
 import com.self.management.self_management.Preloader.Launch;
 import com.self.management.self_management.Preloader.initPreloader;
 import javafx.application.Application;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class MainApp extends Application {
     private static double xOffset = 0;
@@ -30,6 +30,7 @@ public class MainApp extends Application {
         Scene scene = new Scene(root, 600, 400);
         stage.setTitle("Hello!");
         stage.initStyle(StageStyle.UNDECORATED);
+        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("IMG/firstlogo.png"))));
         stage.setScene(scene);
         sStage=stage;
         root.setOnMousePressed(event -> {

@@ -53,7 +53,39 @@
 -fx-background-color : #1620A1;
 }
 .card{
--fx-background-radius:15px;
--fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
--fx-border-width: 196;
+-fx-background-color:white;
+-fx-background-radius:10px;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+-fx-border-width: 100;
+}
+.otherbtn{
+-fx-background-color : #9bcdff;
+}
+.otherbtn:active{
+-fx-background-color : #9bcdff;
+}
+.otherbtn:hover{
+-fx-background-color : #9bcdff;
+}
+.viewport{
+-fx-background-color:transparent;
+}
+
+.date-picker .text-field{
+-fx-background-color: transparent;
+}
+.date-picker .arrow-button{
+-fx-background-radius:0px ;
+-fx-background-color: transparent;
+}
+.Whitebtn{
+-fx-background-color:white;
+-fx-background-radius:20px;
+}
+.Whitebtnclose{
+-fx-background-color:white;
+-fx-background-radius:20px;
+}
+.Whitebtnclose:hover{
+-fx-background-color:red;
 }

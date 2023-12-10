@@ -4,6 +4,8 @@ module com.self.management.self_management {
     requires java.sql;
     requires mysql.connector.j;
     requires javafx.web;
+    requires mailjet.client;
+    requires json;
 
 
     opens com.self.management.self_management to javafx.fxml;

@@ -2,19 +2,107 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="514.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Shooping">
+<AnchorPane prefHeight="620.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Shooping">
    <children>
-      <Button layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="close" stylesheets="@../CSS/login.css">
-         <graphic>
-            <FontAwesomeIconView glyphName="MINUS" />
-         </graphic>
-      </Button>
-      <Button layoutX="798.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
-         <graphic>
-            <FontAwesomeIconView glyphName="CLOSE" />
-         </graphic>
-      </Button>
+      <WebView fx:id="webView" prefHeight="571.3333333333334" prefWidth="824.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="mainPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="620.0" prefWidth="830.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="close" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MINUS" />
+               </graphic>
+            </Button>
+            <Button layoutX="798.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" />
+               </graphic>
+            </Button>
+            <Button layoutX="50.0" layoutY="69.0" mnemonicParsing="false" onAction="#onDaraz" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Daraz.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="304.0" layoutY="69.0" mnemonicParsing="false" onAction="#onRokomari" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="114.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Rokomari.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="575.0" layoutY="71.0" mnemonicParsing="false" onAction="#onChalDal" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="114.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Chaldal.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="51.0" layoutY="263.0" mnemonicParsing="false" onAction="#onAjkerDeal" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="109.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/AjkerDeal.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="304.0" layoutY="263.0" mnemonicParsing="false" onAction="#onPriyoShop" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/priyoshop.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="575.0" layoutY="263.0" mnemonicParsing="false" onAction="#onOthoba" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="84.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/othoba.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="43.0" layoutY="447.0" mnemonicParsing="false" onAction="#onBikroy" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/bikroy.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="304.0" layoutY="447.0" mnemonicParsing="false" onAction="#onAmazon" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="94.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Amazon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="575.0" layoutY="447.0" mnemonicParsing="false" onAction="#onAlibaba" prefHeight="128.0" prefWidth="216.0" styleClass="card" stylesheets="@../CSS/login.css">
+               <graphic>
+                  <ImageView fitHeight="97.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/Alibaba.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

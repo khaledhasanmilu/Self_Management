@@ -9,24 +9,33 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.ImagePattern;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
+import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Arrays;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class Background implements Initializable {
     private static double xOffset = 0;
     private static double yOffset = 0;
     Stage stage;
+    Image img;
 
     @FXML
     private Label email;
+    @FXML
+    private Circle circlePhoto;
 
     @FXML
     private BorderPane root;
@@ -164,6 +173,10 @@ public class Background implements Initializable {
         ResultSet rst;
         String name = null;
         String ema = null;
+        InputStream is;
+        FileOutputStream fis = null;
+
+        Blob blob;
         try {
             assert con != null;
             pst = con.prepareStatement("SELECT * FROM `userinfo` WHERE uname = ?");
@@ -172,6 +185,16 @@ public class Background implements Initializable {
             rst.next();
             name=rst.getString(1);
             ema=rst.getString(2);
+            blob = rst.getBlob(6);
+            is = blob.getBinaryStream();
+            img = new Image(is);
+            try {
+                fis = new FileOutputStream("output.png");
+                fis.write(is.readNBytes(is.available()));
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+
         }catch (Exception r){
             System.out.println("sql error");
         }
@@ -181,12 +204,14 @@ public class Background implements Initializable {
         email.setText(email.getText()+ema);
         Node node;
         try {
-            node = FXMLLoader.load(MainApp.class.getResource("FXML/Dashboard.fxml"));
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/Dashboard.fxml")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         root.setCenter(node);
         System.out.println(loginController.username);
+       img = new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream("IMG/milu.jpg")));
+        circlePhoto.setFill(new ImagePattern(img));
 
     }
 }
