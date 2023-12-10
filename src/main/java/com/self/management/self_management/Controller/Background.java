@@ -30,18 +30,20 @@ public class Background implements Initializable {
     private static double xOffset = 0;
     private static double yOffset = 0;
     Stage stage;
-    Image img;
+    public  Image img;
 
     @FXML
     private Label email;
     @FXML
-    private Circle circlePhoto;
+    public Circle circlePhoto;
 
     @FXML
     private BorderPane root;
 
     @FXML
     private Label user;
+
+
 
     @FXML
     void onDashboard() {
@@ -175,7 +177,6 @@ public class Background implements Initializable {
         String ema = null;
         InputStream is;
         FileOutputStream fis = null;
-
         Blob blob;
         try {
             assert con != null;
@@ -210,8 +211,14 @@ public class Background implements Initializable {
         }
         root.setCenter(node);
         System.out.println(loginController.username);
-       img = new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream("IMG/milu.jpg")));
-        circlePhoto.setFill(new ImagePattern(img));
+        if(img!=null){
+            circlePhoto.setFill(new ImagePattern(img));
+        }else {
+            img = new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream("IMG/milu.jpg")));
+            circlePhoto.setFill(new ImagePattern(img));
+        }
 
     }
+
+
 }

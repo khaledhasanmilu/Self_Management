@@ -12,6 +12,7 @@ import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.paint.Paint;
@@ -46,8 +47,8 @@ public class Dashboard implements Initializable {
     private Button savebtn;
     @FXML
     private Button cancelbtn;
-    File file;
-    Image image;
+    private File file;
+    public  Image image;
 
 
     @FXML
@@ -82,13 +83,16 @@ public class Dashboard implements Initializable {
     @FXML
     void onSaveImgbtn() throws IOException, SQLException {
         circle.setFill(new ImagePattern(image));
-        FileInputStream fis = new FileInputStream(file);
+        InputStream in = new FileInputStream(file);
         Connection connection = DB.getConnection();
         String query = "UPDATE userinfo SET image = ? WHERE uname = ?";
         PreparedStatement statement = connection.prepareStatement(query);
-        statement.setBlob(1,fis,fis.available());
+        statement.setBlob(1,in,in.available());
         statement.setString(2,loginController.username);
 
+        statement.execute();
+        Background background = loginController.getBG();
+        background.circlePhoto.setFill(new ImagePattern(image));
         savebtn.setVisible(false);
         cancelbtn.setVisible(false);
         editbtn.setVisible(true);
@@ -101,6 +105,11 @@ public class Dashboard implements Initializable {
         String nam = null;
         String ema = null;
         String date = null;
+
+        InputStream is;
+        FileOutputStream fis = null;
+        Blob blob;
+
         try {
             assert con != null;
             pst = con.prepareStatement("SELECT * FROM `userinfo` WHERE uname = ?");
@@ -110,6 +119,16 @@ public class Dashboard implements Initializable {
             nam=rst.getString(1);
             ema=rst.getString(2);
             date=rst.getString(3);
+            blob = rst.getBlob(6);
+            is = blob.getBinaryStream();
+            image = new Image(is);
+            try {
+                fis = new FileOutputStream("output.png");
+                fis.write(is.readNBytes(is.available()));
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+
         }catch (Exception r){
             System.out.println("sql error");
         }
@@ -122,7 +141,12 @@ public class Dashboard implements Initializable {
                 new PieChart.Data("Book", 15000),
                 new PieChart.Data("Target", 3000));
               pichart.setData(pieChartData);
-        image = new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream("IMG/milu.jpg")));
-        circle.setFill(new ImagePattern(image));
+        if(image!=null){
+            circle.setFill(new ImagePattern(image));
+        }else {
+            image = new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream("IMG/milu.jpg")));
+            circle.setFill(new ImagePattern(image));
+        }
+
     }
 }

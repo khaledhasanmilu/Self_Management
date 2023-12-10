@@ -98,7 +98,9 @@ public class loginController {
             pst.setString(2,pass);
             rst = pst.executeQuery();
             if(rst.next()){
-                BorderPane root = FXMLLoader.load(MainApp.class.getResource("FXML/Background.fxml"));
+                FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("FXML/Background.fxml"));
+                BorderPane root = loader.load();
+                setbg(loader.getController());
                 Stage stage = (Stage)( (Node)e.getSource()).getScene().getWindow();
                 stage.setX(80);
                 stage.setY(30);
@@ -286,5 +288,12 @@ public class loginController {
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
+    }
+    public static Background bg;
+    private void setbg(Background bg1){
+        bg = bg1;
+    }
+    public static Background getBG(){
+        return bg;
     }
 }

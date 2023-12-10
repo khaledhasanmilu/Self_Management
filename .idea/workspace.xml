@@ -5,41 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/NoteCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Otp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ResetPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/TaskViewcard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/TodayTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/UpCommingtaskcard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Model/NoteModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Model/OtpModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/notecard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/taskViewcard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/todayTaskcard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/upCommingtaskcard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/firstlogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Background.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Eticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Eticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Shooping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Shooping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToDo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/CSS/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/CSS/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Background.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Background.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Eticket.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Eticket.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Message.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Message.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/News.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/News.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Note.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Note.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Shooping.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Shooping.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/ToDo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/ToDo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701030808822</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add todo">
+      <option name="closed" value="true" />
+      <created>1702236428939</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702236428939</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -239,6 +216,7 @@
     <MESSAGE value="modify project structure" />
     <MESSAGE value="hey..now i change registration pages some icon and tools." />
     <MESSAGE value="new add" />
-    <option name="LAST_COMMIT_MESSAGE" value="new add" />
+    <MESSAGE value="add todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add todo" />
   </component>
 </project>
