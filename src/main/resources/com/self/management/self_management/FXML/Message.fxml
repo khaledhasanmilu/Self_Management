@@ -1,20 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane prefHeight="620.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Message">
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="830.0" style="-fx-background-color: #127b89;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Message">
    <children>
-      <Button layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="close" stylesheets="@../CSS/login.css">
+      <Button layoutX="772.0" layoutY="2.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="close" stylesheets="@../CSS/login.css">
          <graphic>
             <FontAwesomeIconView glyphName="MINUS" />
          </graphic>
       </Button>
-      <Button layoutX="798.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
+      <Button layoutX="803.0" layoutY="2.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
          <graphic>
             <FontAwesomeIconView glyphName="CLOSE" />
          </graphic>
       </Button>
+      <HBox layoutX="9.0" layoutY="30.0" prefHeight="591.0" prefWidth="821.0">
+         <children>
+            <AnchorPane prefHeight="590.0" prefWidth="291.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="90.0" prefWidth="287.0" spacing="15.0" style="-fx-background-color: #0d5963;">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onActiveUser" prefHeight="79.0" prefWidth="121.0" style="-fx-background-color: #0d5963;" text="Active User" textFill="#012d03c2">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color opacity="0.30000001192092896" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#onCommunity" prefHeight="76.0" prefWidth="127.0" style="-fx-background-color: #0d5963;" text="Community" textFill="#012903c2">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color opacity="0.30000001192092896" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ScrollPane hbarPolicy="NEVER" layoutY="91.0" prefHeight="497.0" prefWidth="287.0" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER">
+                     <content>
+                        <VBox fx:id="activeUserContainer" prefHeight="493.0" prefWidth="287.0" style="-fx-background-color: #0d5963;" />
+                     </content>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <VBox alignment="CENTER" prefHeight="580.0" prefWidth="531.0" spacing="3.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="91.0" prefWidth="505.0" style="-fx-background-color: #0d5963;">
+                     <children>
+                        <Circle fx:id="userImageCircle" fill="DODGERBLUE" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+                        <VBox alignment="CENTER_LEFT" prefHeight="91.0" prefWidth="381.0">
+                           <children>
+                              <Label fx:id="msg_userName" prefHeight="17.0" prefWidth="243.0" text="User Name">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="msg_Name" prefHeight="17.0" prefWidth="287.0" text="Name">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="17.0" prefWidth="277.0" text="Active Status">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="massegeScrollbar" hbarPolicy="NEVER" prefHeight="442.0" prefWidth="531.0" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER">
+                     <content>
+                        <VBox fx:id="massegeContainer" alignment="TOP_CENTER" prefHeight="431.0" prefWidth="528.0" spacing="15.0" style="-fx-background-color: #0f727f;">
+                           <children>
+                              <AnchorPane>
+                                 <children>
+                                    <AnchorPane layoutX="7.0" maxWidth="-Infinity" style="-fx-background-color: #094951; -fx-background-radius: 20px;">
+                                       <children>
+                                          <TextFlow layoutX="-2.0" layoutY="3.0" maxWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="hi">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                       <padding>
+                                          <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                       </padding>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefWidth="528.0">
+                                 <children>
+                                    <AnchorPane layoutX="7.0" maxWidth="400.0" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: #107885; -fx-background-radius: 20px;">
+                                       <children>
+                                          <TextFlow layoutX="-2.0" layoutY="3.0" maxWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="hlw">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                       <padding>
+                                          <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                       </padding>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color opacity="0.4000000059604645" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="531.0" style="-fx-background-color: #107f8d;">
+                     <children>
+                        <TextField fx:id="massegeInputField" prefHeight="31.0" prefWidth="437.0" style="-fx-background-color: #0d5963;">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color opacity="0.20000000298023224" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#onSendMassege" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../IMG/icons8-send-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color opacity="0.30000001192092896" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.4000000059604645" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

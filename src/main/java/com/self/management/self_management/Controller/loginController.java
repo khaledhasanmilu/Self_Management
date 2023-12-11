@@ -241,6 +241,16 @@ public class loginController {
            }
        }
     }
+
+    @FXML
+    void onBackFromOtp(ActionEvent event) {
+        otpPane.setVisible(false);
+        restePass.setVisible(false);
+        Registration.setVisible(true);
+        Login.setVisible(false);
+
+    }
+
     @FXML
     void onForgot() {
         Login.setVisible(false);

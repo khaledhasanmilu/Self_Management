@@ -12,4 +12,7 @@ public class NoteModel {
         this.date = date;
         this.noteId=noteId;
     }
+    public NoteModel(){
+
+    }
 }

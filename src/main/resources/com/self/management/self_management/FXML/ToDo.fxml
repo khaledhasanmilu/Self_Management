@@ -11,12 +11,12 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
@@ -80,485 +80,6 @@
                   <ScrollPane hbarPolicy="NEVER" prefHeight="468.0" prefWidth="380.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/login.css" vbarPolicy="NEVER">
                      <content>
                         <VBox fx:id="allTaskVbox" alignment="BOTTOM_CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="373.0" spacing="8.0" style="-fx-background-color: transparent;">
-                           <children>
-                              <Pane prefHeight="73.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                                 <effect>
-                                    <DropShadow>
-                                       <color>
-                                          <Color opacity="0.5" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="365.0" spacing="10.0">
-                                       <children>
-                                          <VBox alignment="CENTER" prefHeight="59.0" prefWidth="295.0">
-                                             <children>
-                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="295.0" text="Newspaper Reading">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="278.0" text="09-12-2023">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <VBox alignment="CENTER" prefHeight="70.0" prefWidth="53.0" spacing="7.0">
-                                             <children>
-                                                <ImageView fitHeight="29.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../IMG/workDone222.png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Edit">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.20000000298023224" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <cursor>
-                                                      <Cursor fx:constant="HAND" />
-                                                   </cursor>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                              <Pane prefHeight="73.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                                 <effect>
-                                    <DropShadow>
-                                       <color>
-                                          <Color opacity="0.5" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="365.0" spacing="10.0">
-                                       <children>
-                                          <VBox alignment="CENTER" prefHeight="59.0" prefWidth="295.0">
-                                             <children>
-                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="295.0" text="IELTS Reading">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="278.0" text="14-12-2023">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <VBox alignment="CENTER" prefHeight="70.0" prefWidth="53.0" spacing="7.0">
-                                             <children>
-                                                <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../IMG/Upcomingggg......png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Edit">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.20000000298023224" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <cursor>
-                                                      <Cursor fx:constant="HAND" />
-                                                   </cursor>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                              <Pane prefHeight="73.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                                 <effect>
-                                    <DropShadow>
-                                       <color>
-                                          <Color opacity="0.5" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="365.0" spacing="10.0">
-                                       <children>
-                                          <VBox alignment="CENTER" prefHeight="59.0" prefWidth="295.0">
-                                             <children>
-                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="295.0" text="Project Update">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="278.0" text="10-12-2023">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <VBox alignment="CENTER" prefHeight="70.0" prefWidth="53.0" spacing="7.0">
-                                             <children>
-                                                <ImageView fitHeight="29.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../IMG/inprogress.png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Edit">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.20000000298023224" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <cursor>
-                                                      <Cursor fx:constant="HAND" />
-                                                   </cursor>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                              <Pane prefHeight="73.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                                 <effect>
-                                    <DropShadow>
-                                       <color>
-                                          <Color opacity="0.5" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="365.0" spacing="10.0">
-                                       <children>
-                                          <VBox alignment="CENTER" prefHeight="59.0" prefWidth="295.0">
-                                             <children>
-                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="295.0" text="EC CT">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="278.0" text="12-12-2023">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <VBox alignment="CENTER" prefHeight="70.0" prefWidth="53.0" spacing="7.0">
-                                             <children>
-                                                <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../IMG/Upcomingggg......png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Edit">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.20000000298023224" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <cursor>
-                                                      <Cursor fx:constant="HAND" />
-                                                   </cursor>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                              <Pane prefHeight="73.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                                 <effect>
-                                    <DropShadow>
-                                       <color>
-                                          <Color opacity="0.5" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="365.0" spacing="10.0">
-                                       <children>
-                                          <VBox alignment="CENTER" prefHeight="59.0" prefWidth="295.0">
-                                             <children>
-                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="295.0" text="Physics Lab Final">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="278.0" text="12-12-2023">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <VBox alignment="CENTER" prefHeight="70.0" prefWidth="53.0" spacing="7.0">
-                                             <children>
-                                                <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../IMG/Upcomingggg......png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Edit">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.20000000298023224" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <cursor>
-                                                      <Cursor fx:constant="HAND" />
-                                                   </cursor>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                              <Pane prefHeight="73.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                                 <effect>
-                                    <DropShadow>
-                                       <color>
-                                          <Color opacity="0.5" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="365.0" spacing="10.0">
-                                       <children>
-                                          <VBox alignment="CENTER" prefHeight="59.0" prefWidth="295.0">
-                                             <children>
-                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="295.0" text="Project Show">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="278.0" text="18-12-2023">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <VBox alignment="CENTER" prefHeight="70.0" prefWidth="53.0" spacing="7.0">
-                                             <children>
-                                                <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../IMG/Upcomingggg......png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Edit">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.20000000298023224" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <cursor>
-                                                      <Cursor fx:constant="HAND" />
-                                                   </cursor>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                              <Pane prefHeight="73.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                                 <effect>
-                                    <DropShadow>
-                                       <color>
-                                          <Color opacity="0.5" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="365.0" spacing="10.0">
-                                       <children>
-                                          <VBox alignment="CENTER" prefHeight="59.0" prefWidth="295.0">
-                                             <children>
-                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="295.0" text="Report update">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="278.0" text="15-12-2023">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <VBox alignment="CENTER" prefHeight="70.0" prefWidth="53.0" spacing="7.0">
-                                             <children>
-                                                <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../IMG/Upcomingggg......png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Edit">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.20000000298023224" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <cursor>
-                                                      <Cursor fx:constant="HAND" />
-                                                   </cursor>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                              <Pane prefHeight="73.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                                 <effect>
-                                    <DropShadow>
-                                       <color>
-                                          <Color opacity="0.5" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="365.0" spacing="10.0">
-                                       <children>
-                                          <VBox alignment="CENTER" prefHeight="59.0" prefWidth="295.0">
-                                             <children>
-                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="295.0" text="Newspaper Reading">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="278.0" text="12-12-2023">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <VBox alignment="CENTER" prefHeight="70.0" prefWidth="53.0" spacing="7.0">
-                                             <children>
-                                                <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../IMG/Upcomingggg......png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Edit">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.20000000298023224" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <cursor>
-                                                      <Cursor fx:constant="HAND" />
-                                                   </cursor>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                              <Pane prefHeight="73.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                                 <effect>
-                                    <DropShadow>
-                                       <color>
-                                          <Color opacity="0.5" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="74.0" prefWidth="365.0" spacing="10.0">
-                                       <children>
-                                          <VBox alignment="CENTER" prefHeight="59.0" prefWidth="295.0">
-                                             <children>
-                                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="295.0" text="Newspaper Reading">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="14.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="278.0" text="12-12-2023">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                          <VBox alignment="CENTER" prefHeight="70.0" prefWidth="53.0" spacing="7.0">
-                                             <children>
-                                                <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../IMG/Upcomingggg......png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="43.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Edit">
-                                                   <font>
-                                                      <Font name="Times New Roman Bold" size="12.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.20000000298023224" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <cursor>
-                                                      <Cursor fx:constant="HAND" />
-                                                   </cursor>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                           </children>
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
@@ -580,7 +101,7 @@
             </DropShadow>
          </effect>
       </AnchorPane>
-      <AnchorPane fx:id="todayTaskPane" layoutX="423.0" layoutY="49.0" prefHeight="293.0" prefWidth="397.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+      <AnchorPane layoutX="423.0" layoutY="49.0" prefHeight="293.0" prefWidth="397.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
          <effect>
             <DropShadow>
                <color>
@@ -601,153 +122,6 @@
             <ScrollPane hbarPolicy="NEVER" layoutX="5.0" layoutY="55.0" prefHeight="231.0" prefWidth="390.0" style="-fx-background-color: white;" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER">
                <content>
                   <VBox fx:id="todayTaskVbox" prefWidth="387.0" spacing="5.0">
-                     <children>
-                        <Pane prefHeight="50.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color red="0.040300000458955765" green="0.3100000023841858" blue="0.18413999676704407" opacity="0.5" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                           <children>
-                              <HBox alignment="CENTER" layoutX="9.0" layoutY="4.0" prefHeight="45.0" prefWidth="357.0">
-                                 <children>
-                                    <HBox alignment="CENTER" prefHeight="45.0" prefWidth="305.0">
-                                       <children>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="305.0" text="Project Update">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../IMG/inprogress.png" />
-                                       </image>
-                                    </ImageView>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="50.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color red="0.040300000458955765" green="0.3100000023841858" blue="0.18413999676704407" opacity="0.5" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                           <children>
-                              <HBox alignment="CENTER" layoutX="9.0" layoutY="4.0" prefHeight="45.0" prefWidth="357.0">
-                                 <children>
-                                    <HBox alignment="CENTER" prefHeight="45.0" prefWidth="305.0">
-                                       <children>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="305.0" text="Physics Theory">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../IMG/inprogress.png" />
-                                       </image>
-                                    </ImageView>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="50.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color red="0.040300000458955765" green="0.3100000023841858" blue="0.18413999676704407" opacity="0.5" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                           <children>
-                              <HBox alignment="CENTER" layoutX="9.0" layoutY="4.0" prefHeight="45.0" prefWidth="357.0">
-                                 <children>
-                                    <HBox alignment="CENTER" prefHeight="45.0" prefWidth="305.0">
-                                       <children>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="305.0" text="Tution">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../IMG/inprogress.png" />
-                                       </image>
-                                    </ImageView>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="50.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color red="0.040300000458955765" green="0.3100000023841858" blue="0.18413999676704407" opacity="0.5" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                           <children>
-                              <HBox alignment="CENTER" layoutX="9.0" layoutY="4.0" prefHeight="45.0" prefWidth="357.0">
-                                 <children>
-                                    <HBox alignment="CENTER" prefHeight="45.0" prefWidth="305.0">
-                                       <children>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="305.0" text="Library Card">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../IMG/inprogress.png" />
-                                       </image>
-                                    </ImageView>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="50.0" prefWidth="363.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color red="0.040300000458955765" green="0.3100000023841858" blue="0.18413999676704407" opacity="0.5" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                           <children>
-                              <HBox alignment="CENTER" layoutX="9.0" layoutY="4.0" prefHeight="45.0" prefWidth="357.0">
-                                 <children>
-                                    <HBox alignment="CENTER" prefHeight="45.0" prefWidth="305.0">
-                                       <children>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="305.0" text="Online Ticket">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../IMG/inprogress.png" />
-                                       </image>
-                                    </ImageView>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </Pane>
-                     </children>
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
@@ -756,7 +130,7 @@
             </ScrollPane>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="upcommingTaskPane" layoutX="423.0" layoutY="358.0" prefHeight="243.0" prefWidth="397.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+      <AnchorPane layoutX="423.0" layoutY="358.0" prefHeight="243.0" prefWidth="397.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
          <effect>
             <DropShadow>
                <color>
@@ -780,160 +154,6 @@
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
-                     <children>
-                        <Pane prefHeight="57.0" prefWidth="371.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color opacity="0.5" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                           <children>
-                              <HBox alignment="CENTER" layoutX="12.0" layoutY="5.0" prefHeight="47.0" prefWidth="352.0" spacing="10.0">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="45.0" prefWidth="275.0">
-                                       <children>
-                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="292.0" text="IELTS Reading">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="14.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="284.0" text="14-12-2023">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="12.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="CENTER" prefHeight="53.0" prefWidth="37.0" spacing="7.0">
-                                       <children>
-                                          <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../IMG/Upcomingggg......png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="57.0" prefWidth="371.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color opacity="0.5" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                           <children>
-                              <HBox alignment="CENTER" layoutX="12.0" layoutY="5.0" prefHeight="47.0" prefWidth="352.0" spacing="10.0">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="45.0" prefWidth="275.0">
-                                       <children>
-                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="292.0" text="Project Show">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="14.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="284.0" text="18-12-2023">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="12.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="CENTER" prefHeight="53.0" prefWidth="37.0" spacing="7.0">
-                                       <children>
-                                          <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../IMG/Upcomingggg......png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="57.0" prefWidth="371.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color opacity="0.5" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                           <children>
-                              <HBox alignment="CENTER" layoutX="12.0" layoutY="5.0" prefHeight="47.0" prefWidth="352.0" spacing="10.0">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="45.0" prefWidth="275.0">
-                                       <children>
-                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="292.0" text="EC CT">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="14.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="284.0" text="12-12-2023">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="12.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="CENTER" prefHeight="53.0" prefWidth="37.0" spacing="7.0">
-                                       <children>
-                                          <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../IMG/Upcomingggg......png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="57.0" prefWidth="371.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color opacity="0.5" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                           <children>
-                              <HBox alignment="CENTER" layoutX="12.0" layoutY="5.0" prefHeight="47.0" prefWidth="352.0" spacing="10.0">
-                                 <children>
-                                    <VBox alignment="CENTER" prefHeight="45.0" prefWidth="275.0">
-                                       <children>
-                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="292.0" text="Physics Lab Final">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="14.0" />
-                                             </font>
-                                          </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="284.0" text="15-12-2023">
-                                             <font>
-                                                <Font name="Times New Roman Bold" size="12.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="CENTER" prefHeight="53.0" prefWidth="37.0" spacing="7.0">
-                                       <children>
-                                          <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../IMG/Upcomingggg......png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                    </VBox>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </Pane>
-                     </children>
                   </VBox>
                </content>
             </ScrollPane>
@@ -1129,6 +349,9 @@
                                        </color>
                                     </DropShadow>
                                  </effect>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
                               </TextField>
                               <Label prefHeight="34.0" prefWidth="50.0" text="Date">
                                  <font>
@@ -1146,20 +369,26 @@
                                        </color>
                                     </DropShadow>
                                  </effect>
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
                               </DatePicker>
                               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
                                  <children>
-                                    <Label text="Status :">
+                                    <RadioButton fx:id="doneRadiobtn" mnemonicParsing="false" text="Done">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
-                                    </Label>
-                                    <RadioButton fx:id="inProgressradionbtn" mnemonicParsing="false" style="-fx-background-color: transparent;" text="In Progress">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radiotgl" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="inProgressRadiobtn" layoutX="229.0" layoutY="23.0" mnemonicParsing="false" text="In Progress" toggleGroup="$radiotgl">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
                                     </RadioButton>
-                                    <RadioButton fx:id="doneRadiobtn" mnemonicParsing="false" text="Done">
+                                    <RadioButton fx:id="upCommingRadiobtn" layoutX="149.0" layoutY="23.0" mnemonicParsing="false" text="Up Comming" toggleGroup="$radiotgl">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
@@ -1171,7 +400,7 @@
                                     <Font name="System Bold" size="20.0" />
                                  </font>
                               </Label>
-                              <TextArea fx:id="createTaskDetails1" prefHeight="211.0" prefWidth="380.0" style="-fx-background-color: transparent; -fx-background-radius: 20px;" styleClass="text-field" stylesheets="@../CSS/login.css">
+                              <TextArea fx:id="editTaskDetails" prefHeight="211.0" prefWidth="380.0" style="-fx-background-color: transparent; -fx-background-radius: 20px;" styleClass="text-field" stylesheets="@../CSS/login.css">
                                  <VBox.margin>
                                     <Insets top="10.0" />
                                  </VBox.margin>
