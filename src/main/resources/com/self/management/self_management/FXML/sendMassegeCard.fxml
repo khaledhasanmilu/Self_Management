@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefWidth="528.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefWidth="528.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.SendMassegeCard">
    <children>
       <AnchorPane layoutX="7.0" maxWidth="400.0" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: #107885; -fx-background-radius: 20px;" AnchorPane.leftAnchor="15.0">
          <children>

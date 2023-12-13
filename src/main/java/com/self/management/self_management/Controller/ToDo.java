@@ -80,6 +80,9 @@ public class ToDo implements Initializable {
         editTaskPane.setVisible(false);
         CreateTaskPane.setVisible(true);
         allTaskPane.setVisible(false);
+        editTaskTitle.setText("");
+        editTaskDate.getEditor().setText("");
+        editTaskDetails.setText("");
     }
 
     @FXML

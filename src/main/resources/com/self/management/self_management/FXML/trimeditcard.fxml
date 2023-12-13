@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="63.0" prefWidth="328.0" style="-fx-background-color: white; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Tripeditcard">
+   <children>
+      <Label fx:id="itemName" alignment="CENTER" layoutX="14.0" layoutY="20.0" prefHeight="24.0" prefWidth="264.0" text="jjji">
+         <font>
+            <Font name="Stencil" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.30000001192092896" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Button fx:id="delete" layoutX="288.0" layoutY="20.0" mnemonicParsing="false" styleClass="close" stylesheets="@../CSS/login.css">
+         <graphic>
+            <FontAwesomeIconView glyphName="CLOSE" />
+         </graphic>
+      </Button>
+   </children>
+   <effect>
+      <DropShadow>
+         <color>
+            <Color opacity="0.5" />
+         </color>
+      </DropShadow>
+   </effect>
+</AnchorPane>

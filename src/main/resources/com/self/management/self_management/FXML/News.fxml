@@ -148,5 +148,14 @@
             </Button>
          </children>
       </AnchorPane>
+      <AnchorPane fx:id="loadingscreen" layoutX="294.0" layoutY="244.0" prefHeight="200.0" prefWidth="333.0" visible="false">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="333.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../IMG/ratrunn.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

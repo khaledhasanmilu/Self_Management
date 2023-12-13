@@ -106,9 +106,9 @@
                         </VBox>
                      </children>
                   </HBox>
-                  <ScrollPane fx:id="massegeScrollbar" hbarPolicy="NEVER" prefHeight="442.0" prefWidth="531.0" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER">
+                  <ScrollPane fx:id="massegeScrollbar" hbarPolicy="NEVER" prefHeight="442.0" prefWidth="531.0" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER" vvalue="1.0">
                      <content>
-                        <VBox fx:id="massegeContainer" alignment="TOP_CENTER" prefHeight="431.0" prefWidth="528.0" spacing="15.0" style="-fx-background-color: #0f727f;">
+                        <VBox fx:id="massegeContainer" alignment="TOP_CENTER" prefHeight="431.0" prefWidth="528.0" spacing="15.0" style="-fx-background-color: #0d5963;">
                            <children>
                               <AnchorPane>
                                  <children>
@@ -172,7 +172,7 @@
                   </ScrollPane>
                   <HBox alignment="CENTER" prefHeight="57.0" prefWidth="531.0" style="-fx-background-color: #107f8d;">
                      <children>
-                        <TextField fx:id="massegeInputField" prefHeight="31.0" prefWidth="437.0" style="-fx-background-color: #0d5963;">
+                        <TextField fx:id="massegeInputField" onAction="#onSendMassege" prefHeight="31.0" prefWidth="437.0" style="-fx-background-color: #0d5963;">
                            <effect>
                               <DropShadow>
                                  <color>
