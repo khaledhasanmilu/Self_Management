@@ -49,7 +49,7 @@ public class Background implements Initializable {
     void onDashboard() {
         Node node;
         try {
-            node = FXMLLoader.load(MainApp.class.getResource("FXML/Dashboard.fxml"));
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/Dashboard.fxml")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -67,7 +67,7 @@ public class Background implements Initializable {
     void onEticket() {
         Node node;
         try {
-            node = FXMLLoader.load(MainApp.class.getResource("FXML/Eticket.fxml"));
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/Eticket.fxml")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -78,7 +78,7 @@ public class Background implements Initializable {
     void onLogout() throws IOException {
 
     stage = MainApp.sStage;
-    Parent parent = FXMLLoader.load(MainApp.class.getResource("FXML/login.fxml"));
+    Parent parent = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/login.fxml")));
     Scene scene = new Scene(parent);
     stage.setScene(scene);
     stage.show();
@@ -96,7 +96,7 @@ public class Background implements Initializable {
     void onMessage() {
         Node node;
         try {
-            node = FXMLLoader.load(MainApp.class.getResource("FXML/Message.fxml"));
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/Message.fxml")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -107,7 +107,18 @@ public class Background implements Initializable {
     void onNews() {
         Node node;
         try {
-            node = FXMLLoader.load(MainApp.class.getResource("FXML/News.fxml"));
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/News.fxml")));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        root.setCenter(node);
+    }
+
+    @FXML
+    void onSetting() {
+        Node node;
+        try {
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/Setting.fxml")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -118,7 +129,7 @@ public class Background implements Initializable {
     void onNote() {
         Node node;
         try {
-            node = FXMLLoader.load(MainApp.class.getResource("FXML/Note.fxml"));
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/Note.fxml")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -131,22 +142,12 @@ public class Background implements Initializable {
     yOffset=event.getSceneY();
     }
 
-    @FXML
-    void onShooping() {
-        Node node;
-        try {
-            node = FXMLLoader.load(MainApp.class.getResource("FXML/Shooping.fxml"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        root.setCenter(node);
-    }
 
     @FXML
     void onToDo() {
         Node node;
         try {
-            node = FXMLLoader.load(MainApp.class.getResource("FXML/ToDo.fxml"));
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/ToDo.fxml")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -157,13 +158,22 @@ public class Background implements Initializable {
     void onToolBox() {
         Node node;
         try {
-            node = FXMLLoader.load(MainApp.class.getResource("FXML/ToolBox.fxml"));
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/ToolBox.fxml")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         root.setCenter(node);
     }
-
+    @FXML
+    void onFinance() {
+        Node node;
+        try {
+            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/finance.fxml")));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        root.setCenter(node);
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

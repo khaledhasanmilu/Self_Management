@@ -72,7 +72,7 @@
                                  </color>
                               </DropShadow>
                            </effect></DatePicker>
-                        <TextField fx:id="items" layoutX="80.0" layoutY="83.0" prefHeight="28.0" prefWidth="171.0" promptText="item" style="-fx-background-color: white;">
+                        <TextField fx:id="items" layoutX="80.0" layoutY="83.0" prefHeight="28.0" prefWidth="171.0" promptText="Item" style="-fx-background-color: white;">
                            <effect>
                               <DropShadow>
                                  <color>
@@ -87,7 +87,10 @@
                                     <Color opacity="0.5" />
                                  </color>
                               </DropShadow>
-                           </effect></Button>
+                           </effect>
+                           <font>
+                              <Font name="Rockwell Bold" size="12.0" />
+                           </font></Button>
                      </children>
                   </AnchorPane>
                   <ScrollPane hbarPolicy="NEVER" prefHeight="302.0" prefWidth="354.0" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER">
@@ -117,6 +120,9 @@
                      </color>
                   </DropShadow>
                </effect>
+               <font>
+                  <Font name="Rockwell Bold" size="12.0" />
+               </font>
             </Button>
          </children>
       </AnchorPane>

@@ -146,6 +146,22 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Button contentDisplay="CENTER" layoutX="35.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBackToNews" prefHeight="28.0" prefWidth="26.0" style="-fx-background-color: white; -fx-background-radius: 15px;">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="16.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../IMG/icons8-back-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="loadingscreen" layoutX="294.0" layoutY="244.0" prefHeight="200.0" prefWidth="333.0" visible="false">

@@ -1,4 +1,4 @@
-package com.self.management.self_management.Model;
+package com.self.management.self_management;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

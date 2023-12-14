@@ -13,9 +13,9 @@
 
 <AnchorPane prefHeight="82.0" prefWidth="405.0" style="-fx-background-color: white; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Tripcard">
    <children>
-      <Label fx:id="trip_name" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="293.0" text="trip name">
+      <Label fx:id="trip_name" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="293.0" text="Trip name">
          <font>
-            <Font name="Britannic Bold" size="19.0" />
+            <Font name="Rockwell Bold" size="14.0" />
          </font>
          <effect>
             <DropShadow>
@@ -24,9 +24,9 @@
                </color>
             </DropShadow>
          </effect></Label>
-      <Label fx:id="tripDate" alignment="CENTER" layoutX="48.0" layoutY="49.0" prefHeight="16.0" prefWidth="226.0" text="Date">
+      <Label fx:id="tripDate" alignment="CENTER" layoutX="48.0" layoutY="49.0" prefHeight="16.0" prefWidth="226.0" text="yy-mm-dd">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="Times New Roman Bold" size="14.0" />
          </font>
          <effect>
             <DropShadow>
@@ -51,6 +51,9 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+               <font>
+                  <Font size="11.0" />
+               </font>
             </Button>
             <Button fx:id="checkoutBtn" mnemonicParsing="false" style="-fx-background-color: white;" text="Check Out">
                <effect>
@@ -63,6 +66,9 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
+               <font>
+                  <Font name="Rockwell Bold" size="10.0" />
+               </font>
             </Button>
          </children>
          <padding>

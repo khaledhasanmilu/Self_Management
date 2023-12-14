@@ -5,35 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/BagPackTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Bagitem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/FinanceManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/PackingCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Tripcard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Tripeditcard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Model/PassWordHash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/PackingCheck.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/bagitem.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/bagpack.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/financeManagement.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/trimeditcard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/tripcard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/tripeditcard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/bag.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/bagg.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/ratrunn.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ExpanseCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Health.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/IncomeCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Setting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Model/CustomNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Health.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/IncomeCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Setting.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/expanseCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/finance.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/E-Shoping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/eTicket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/expansedashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/icons8-fast-cart-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/icons8-food-80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/icons8-hamburger-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/medical-icon-png-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/movie-camera-icon-free-png.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/movie-ticket-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/newsIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/ricshaaa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/IMG/ricshaw.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Eticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Eticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/FinanceManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/FinanceManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/SendMassegeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/SendMassegeCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Shooping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Shooping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToolBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToolBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Message.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Message.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Model/PassWordHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/PassWordHash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/CSS/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/CSS/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Background.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Background.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Eticket.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Eticket.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/News.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/News.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/PackingCheck.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/PackingCheck.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Shooping.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Shooping.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/ToolBox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/ToolBox.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/sendMassegeCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/sendMassegeCard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/bagitem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/bagitem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/bagpack.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/bagpack.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/financeManagement.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/trimeditcard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/trimeditcard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/tripcard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/tripcard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/tripeditcard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/tripeditcard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +82,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;khaledhasanmilu&quot;,
+      &quot;author&quot;: &quot;khaledhasanmilu&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;khaledhasanmilu&quot;
+    &quot;assignee&quot;: &quot;khaledhasanmilu&quot;,
+    &quot;author&quot;: &quot;khaledhasanmilu&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
@@ -86,25 +114,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Sigmantation Fault/Self_Management/src/main/resources/com/self/management/self_management/IMG&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "D:/Sigmantation Fault/Self_Management/src/main/resources/com/self/management/self_management/FXML",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Sigmantation Fault\Self_Management\src\main\resources\com\self\management\self_management\FXML" />
       <recent name="D:\Sigmantation Fault\Self_Management\src\main\resources\com\self\management\self_management\IMG" />
       <recent name="D:\Sigmantation Fault\Self_Management\src\main\java\com\self\management\self_management\Controller" />
-      <recent name="D:\Sigmantation Fault\Self_Management\src\main\resources\com\self\management\self_management\FXML" />
       <recent name="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller" />
       <recent name="$PROJECT_DIR$/src/main/java/com/self/management/self_management/view" />
     </key>
@@ -116,7 +144,7 @@
       <recent name="com.self.management.self_management" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PassWordHash">
+  <component name="RunManager" selected="Application.MainApp">
     <configuration name="Launch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.self.management.self_management.Preloader.Launch" />
       <module name="Self_Management" />
@@ -144,11 +172,11 @@
       </method>
     </configuration>
     <configuration name="PassWordHash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.self.management.self_management.Model.PassWordHash" />
+      <option name="MAIN_CLASS_NAME" value="com.self.management.self_management.PassWordHash" />
       <module name="Self_Management" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.self.management.self_management.Model.*" />
+          <option name="PATTERN" value="com.self.management.self_management.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,8 +186,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PassWordHash" />
         <item itemvalue="Application.MainApp" />
+        <item itemvalue="Application.PassWordHash" />
         <item itemvalue="Application.Launch" />
       </list>
     </recent_temporary>
@@ -229,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702242259655</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implement bag packing feature in toolbox">
+      <option name="closed" value="true" />
+      <created>1702505635236</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702505635236</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -267,7 +303,8 @@
     <MESSAGE value="hey..now i change registration pages some icon and tools." />
     <MESSAGE value="new add" />
     <MESSAGE value="add todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add todo" />
+    <MESSAGE value="implement bag packing feature in toolbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement bag packing feature in toolbox" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

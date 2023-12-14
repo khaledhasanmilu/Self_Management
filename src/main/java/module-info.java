@@ -6,7 +6,7 @@ module com.self.management.self_management {
     requires javafx.web;
     requires mailjet.client;
     requires json;
-
+    requires org.controlsfx.controls;
 
     opens com.self.management.self_management to javafx.fxml;
     exports com.self.management.self_management;

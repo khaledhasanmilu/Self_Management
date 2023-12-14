@@ -62,6 +62,13 @@
             <version>4.2.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>11.1.2</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

@@ -89,3 +89,13 @@
 .Whitebtnclose:hover{
 -fx-background-color:red;
 }
+
+.Toolbox-btn{
+-fx-background-color:transparent;
+-fx-background-radius:20px;
+}
+.Toolbox-btn:hover{
+-fx-background-color:#1b544f;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+-fx-cursor:hand;
+}

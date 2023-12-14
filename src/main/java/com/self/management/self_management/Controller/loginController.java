@@ -6,6 +6,7 @@ import com.self.management.self_management.DB;
 import com.self.management.self_management.MainApp;
 import com.self.management.self_management.Model.CustomAlert;
 import com.self.management.self_management.Model.OtpModel;
+import com.self.management.self_management.PassWordHash;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -87,7 +88,7 @@ public class loginController {
     protected void onLogin(ActionEvent e) throws IOException{
         username = luser.getText();
         String user = luser.getText();
-        String pass = lpass.getText();
+        String pass = PassWordHash.hashPassword(lpass.getText());
         try {
             con = DB.getConnection();
             if(con == null){
@@ -193,7 +194,8 @@ public class loginController {
         String newp = newPass.getText();
         String cnpass = cnewpass.getText();
             if (newp.equals(cnpass)) {
-                String query = "UPDATE `userinfo` SET `password`='"+newp+"' WHERE `uname`='"+userFromSearch+"'";
+                String hashPassword = PassWordHash.hashPassword(cnpass);
+                String query = "UPDATE `userinfo` SET `password`='"+hashPassword+"' WHERE `uname`='"+userFromSearch+"'";
                 pst = con.prepareStatement(query);
                 if (pst.executeUpdate() > 0) {
                     System.out.println("SuccessFully Change Password");
@@ -215,7 +217,8 @@ public class loginController {
         System.out.println(randomOtp);
        if (checker==1){
            if(randomOtp.equals(Otp)){
-               String query = "INSERT INTO `userinfo`(`uname`, `email`, `dob`, `gender`, `password`) VALUES ('"+uname+"','"+Email+"','"+Dob+"','"+Gender+"','"+password+"')";
+               String hashpassword = PassWordHash.hashPassword(password);
+               String query = "INSERT INTO `userinfo`(`uname`, `email`, `dob`, `gender`, `password`) VALUES ('"+uname+"','"+Email+"','"+Dob+"','"+Gender+"','"+hashpassword+"')";
                pst = con.prepareStatement(query);
                if(pst.executeUpdate()>0){
                    System.out.println("SuccessFully Registered");

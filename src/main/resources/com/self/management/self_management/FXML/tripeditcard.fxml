@@ -10,9 +10,9 @@
 
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="63.0" prefWidth="328.0" style="-fx-background-color: white; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Tripeditcard">
    <children>
-      <Label fx:id="itemName" alignment="CENTER" layoutX="14.0" layoutY="20.0" prefHeight="24.0" prefWidth="264.0" text="jjji">
+      <Label fx:id="itemName" alignment="CENTER" layoutX="14.0" layoutY="20.0" prefHeight="24.0" prefWidth="264.0" text="New Update">
          <font>
-            <Font name="Stencil" size="15.0" />
+            <Font name="Rockwell" size="15.0" />
          </font>
          <effect>
             <DropShadow>

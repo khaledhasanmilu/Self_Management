@@ -10,7 +10,7 @@
    <children>
       <Label fx:id="item" alignment="CENTER" layoutX="20.0" layoutY="15.0" prefHeight="16.0" prefWidth="291.0" text="Item1">
          <font>
-            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+            <Font name="Rockwell Bold" size="14.0" />
          </font></Label>
    </children>
    <effect>

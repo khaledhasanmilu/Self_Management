@@ -9,9 +9,9 @@
 
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="63.0" prefWidth="328.0" style="-fx-background-color: white; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.PackingCheck">
    <children>
-      <Label fx:id="itemName" alignment="CENTER" layoutX="14.0" layoutY="20.0" prefHeight="24.0" prefWidth="264.0" text="jjji">
+      <Label fx:id="itemName" alignment="CENTER" layoutX="14.0" layoutY="20.0" prefHeight="24.0" prefWidth="264.0" text="Mark Item">
          <font>
-            <Font name="Stencil" size="15.0" />
+            <Font name="Rockwell Bold" size="14.0" />
          </font>
          <effect>
             <DropShadow>
@@ -20,7 +20,14 @@
                </color>
             </DropShadow>
          </effect></Label>
-      <CheckBox fx:id="checkox" layoutX="285.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: white;" />
+      <CheckBox fx:id="checkox" layoutX="285.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect></CheckBox>
    </children>
    <effect>
       <DropShadow>

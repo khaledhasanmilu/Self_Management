@@ -22,15 +22,12 @@
             <FontAwesomeIconView glyphName="CLOSE" />
          </graphic>
       </Button>
-      <Pane layoutX="31.0" layoutY="47.0" prefHeight="239.0" prefWidth="446.0" style="-fx-background-color: #D8E2EB; -fx-background-radius: 20px;">
+      <Pane layoutX="31.0" layoutY="47.0" prefHeight="220.0" prefWidth="435.0" style="-fx-background-color: #D8E2EB; -fx-background-radius: 20px;">
          <children>
             <Circle fx:id="circle" fill="WHITE" layoutX="91.0" layoutY="93.0" radius="79.0" stroke="WHITE" strokeType="INSIDE" />
-            <Button fx:id="editbtn" layoutX="55.0" layoutY="192.0" mnemonicParsing="false" onAction="#onEditPhoto" style="-fx-background-color: #faeef9;" text="Edit Photo" />
             <Label fx:id="name" layoutX="182.0" layoutY="44.0" prefHeight="17.0" prefWidth="253.0" text="Name           :" />
             <Label fx:id="email" layoutX="182.0" layoutY="93.0" prefHeight="17.0" prefWidth="253.0" text="Email             :" />
             <Label fx:id="dob" layoutX="182.0" layoutY="150.0" prefHeight="17.0" prefWidth="253.0" text="Date of Birth :" />
-            <Button fx:id="cancelbtn" layoutX="16.0" layoutY="167.0" mnemonicParsing="false" onAction="#onCancelImgbtn" style="-fx-background-color: #faeef9;" text="Cancel" visible="false" />
-            <Button fx:id="savebtn" layoutX="87.0" layoutY="167.0" mnemonicParsing="false" onAction="#onSaveImgbtn" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #faeef9;" text="Save" visible="false" />
          </children>
       </Pane>
       <Pane layoutX="24.0" layoutY="314.0" prefHeight="297.0" prefWidth="446.0" style="-fx-background-color: #D8E2EB; -fx-background-radius: 20px;">

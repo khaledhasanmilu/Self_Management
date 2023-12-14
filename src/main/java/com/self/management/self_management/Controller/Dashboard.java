@@ -29,25 +29,14 @@ import java.util.ResourceBundle;
 public class Dashboard implements Initializable {
     @FXML
     private Circle circle;
-
     @FXML
     private Label dob;
-
-    @FXML
-    private Button editbtn;
-
     @FXML
     private Label email;
     @FXML
     private PieChart pichart;
-
     @FXML
     private Label name;
-    @FXML
-    private Button savebtn;
-    @FXML
-    private Button cancelbtn;
-    private File file;
     public  Image image;
 
 
@@ -55,48 +44,13 @@ public class Dashboard implements Initializable {
     void onClose(ActionEvent event) {
         System.exit(0);
     }
-    @FXML
-    void onEditPhoto() throws FileNotFoundException {
-        FileChooser fileChooser = new FileChooser();
-        Stage stage = (Stage) email.getScene().getWindow();
-        file = fileChooser.showOpenDialog(stage);
-        image = new Image(new FileInputStream(file));
-        circle.setFill(new ImagePattern(image));
-        editbtn.setVisible(false);
-        savebtn.setVisible(true);
-        cancelbtn.setVisible(true);
-        System.out.println(file);
-    }
 
     @FXML
     void onMinimize(ActionEvent event) {
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         stage.setIconified(true);
     }
-    @FXML
-    void onCancelImgbtn() {
-        savebtn.setVisible(false);
-        cancelbtn.setVisible(false);
-        editbtn.setVisible(true);
-        circle.setFill(Color.WHITE);
-    }
-    @FXML
-    void onSaveImgbtn() throws IOException, SQLException {
-        circle.setFill(new ImagePattern(image));
-        InputStream in = new FileInputStream(file);
-        Connection connection = DB.getConnection();
-        String query = "UPDATE userinfo SET image = ? WHERE uname = ?";
-        PreparedStatement statement = connection.prepareStatement(query);
-        statement.setBlob(1,in,in.available());
-        statement.setString(2,loginController.username);
 
-        statement.execute();
-        Background background = loginController.getBG();
-        background.circlePhoto.setFill(new ImagePattern(image));
-        savebtn.setVisible(false);
-        cancelbtn.setVisible(false);
-        editbtn.setVisible(true);
-    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Connection con = DB.getConnection();
