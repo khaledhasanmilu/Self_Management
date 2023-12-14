@@ -91,7 +91,7 @@ public class Note implements Initializable {
 
 
         Connection con = DB.getConnection();
-        PreparedStatement pst = con.prepareStatement("INSERT INTO `note`(`user`, `note_title`, `note_body`) VALUES (?,?,?)");
+        PreparedStatement pst = con.prepareStatement("INSERT INTO `noten`(`user`, `note_title`, `note_body`) VALUES (?,?,?)");
         pst.setString(1, loginController.username);
         pst.setString(2, NoteTitleFS.getText());
         pst.setString(3, NoteBodyFS.getText());
@@ -183,7 +183,7 @@ public class Note implements Initializable {
 
         /// database update
         Connection con = DB.getConnection();
-        PreparedStatement pst = con.prepareStatement("UPDATE `note` SET `note_title` = ?, `note_body` = ? ,`note_date`= NOW() WHERE `noteId` = ?");
+        PreparedStatement pst = con.prepareStatement("UPDATE `noten` SET `note_title` = ?, `note_body` = ? ,`note_date`= NOW() WHERE `noteId` = ?");
 
         pst.setString(1, noteViewTitle.getText());
         pst.setString(2, noteViewBody.getText());
@@ -207,7 +207,7 @@ public class Note implements Initializable {
     @FXML
     void onViewDelete(ActionEvent event) throws SQLException {
         Connection con = DB.getConnection();
-        PreparedStatement pst = con.prepareStatement("DELETE FROM `note` WHERE `noteId`=?");
+        PreparedStatement pst = con.prepareStatement("DELETE FROM `noten` WHERE `noteId`=?");
         pst.setInt(1, noteID);
 
         //test
@@ -229,14 +229,14 @@ public class Note implements Initializable {
     private ArrayList<NoteModel> getNoteList() throws SQLException {
         ArrayList<NoteModel> list = new ArrayList<>();
         Connection con = DB.getConnection();
-        PreparedStatement pst = con.prepareStatement("SELECT * FROM note WHERE user = ?");
+        PreparedStatement pst = con.prepareStatement("SELECT * FROM noten WHERE user = ?");
         pst.setString(1, loginController.username);
         ResultSet rst = pst.executeQuery();
         while (rst.next()) {
-            String title = rst.getString(3);
-            String date = rst.getString(2);
-            String body = rst.getString(4);
-            int noteID = rst.getInt(5);
+            String title = rst.getString(4);
+            String date = rst.getString(3);
+            String body = rst.getString(5);
+            int noteID = rst.getInt(2);
             list.add(new NoteModel(title, body, date, noteID));
         }
         return list;

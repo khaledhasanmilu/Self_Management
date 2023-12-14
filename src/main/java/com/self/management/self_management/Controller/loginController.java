@@ -302,6 +302,14 @@ public class loginController {
             System.out.println(e.getMessage());
         }
     }
+    @FXML
+    void onBackFromnewpassword(ActionEvent event) {
+        otpPane.setVisible(false);
+        restePass.setVisible(false);
+        Registration.setVisible(false);
+        mailSearch.setVisible(false);
+        Login.setVisible(true);
+    }
     public static Background bg;
     private void setbg(Background bg1){
         bg = bg1;
