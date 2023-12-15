@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER" prefHeight="57.0" prefWidth="335.0" spacing="30.0" style="-fx-background-color: white; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.ExpanseCard">
+<HBox alignment="CENTER" minHeight="-Infinity" prefHeight="57.0" prefWidth="335.0" spacing="30.0" style="-fx-background-color: white; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.ExpanseCard">
    <children>
       <ImageView fx:id="catagoryImg" fitHeight="52.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
          <image>

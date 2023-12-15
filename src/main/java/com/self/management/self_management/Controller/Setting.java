@@ -2,6 +2,7 @@ package com.self.management.self_management.Controller;
 
 import com.self.management.self_management.DB;
 import com.self.management.self_management.MainApp;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -49,7 +50,8 @@ public class Setting implements Initializable {
     public Image image;
     @FXML
     void onClose(ActionEvent event) {
-        System.exit(0);
+
+        Platform.exit();
     }
 
 
@@ -136,7 +138,7 @@ public class Setting implements Initializable {
         if(image!=null){
             circle.setFill(new ImagePattern(image));
         }else {
-            image = new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream("IMG/milu.jpg")));
+            image = new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream("IMG/defaultuser.png")));
             circle.setFill(new ImagePattern(image));
         }
    }

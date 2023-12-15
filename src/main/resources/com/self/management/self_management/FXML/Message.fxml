@@ -16,8 +16,6 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="830.0" style="-fx-background-color: #127b89;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Message">
    <children>
@@ -65,7 +63,11 @@
                   </HBox>
                   <ScrollPane hbarPolicy="NEVER" layoutY="91.0" prefHeight="497.0" prefWidth="287.0" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER">
                      <content>
-                        <VBox fx:id="activeUserContainer" prefHeight="493.0" prefWidth="287.0" style="-fx-background-color: #0d5963;" />
+                        <VBox fx:id="activeUserContainer" prefHeight="493.0" prefWidth="287.0" style="-fx-background-color: #0d5963;" visible="false">
+                           <children>
+                              <TextField fx:id="userSearchInput" onAction="#onSearchUser" />
+                              <Button mnemonicParsing="false" onAction="#onSearchUser" text="search" />
+                           </children></VBox>
                      </content>
                      <effect>
                         <DropShadow>
@@ -81,20 +83,15 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="91.0" prefWidth="505.0" style="-fx-background-color: #0d5963;">
                      <children>
-                        <Circle fx:id="userImageCircle" fill="DODGERBLUE" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
-                        <VBox alignment="CENTER_LEFT" prefHeight="91.0" prefWidth="381.0">
+                        <Circle fx:id="userImageCircle" fill="DODGERBLUE" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
+                        <VBox alignment="CENTER" prefHeight="91.0" prefWidth="381.0">
                            <children>
                               <Label fx:id="msg_userName" prefHeight="17.0" prefWidth="243.0" text="User Name">
                                  <font>
                                     <Font name="System Bold" size="19.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="msg_Name" prefHeight="17.0" prefWidth="287.0" text="Name">
-                                 <font>
-                                    <Font name="System Bold" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Label prefHeight="17.0" prefWidth="277.0" text="Active Status">
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="277.0" text="Active " textFill="#17b719">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
@@ -109,54 +106,6 @@
                   <ScrollPane fx:id="massegeScrollbar" hbarPolicy="NEVER" prefHeight="442.0" prefWidth="531.0" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER" vvalue="1.0">
                      <content>
                         <VBox fx:id="massegeContainer" alignment="TOP_CENTER" prefHeight="431.0" prefWidth="528.0" spacing="15.0" style="-fx-background-color: #0d5963;">
-                           <children>
-                              <AnchorPane>
-                                 <children>
-                                    <AnchorPane layoutX="7.0" maxWidth="-Infinity" style="-fx-background-color: #094951; -fx-background-radius: 20px;">
-                                       <children>
-                                          <TextFlow layoutX="-2.0" layoutY="3.0" maxWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="0.0">
-                                             <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="hi">
-                                                   <font>
-                                                      <Font size="14.0" />
-                                                   </font>
-                                                </Text>
-                                             </children>
-                                          </TextFlow>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <padding>
-                                          <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
-                                       </padding>
-                                    </AnchorPane>
-                                 </children>
-                              </AnchorPane>
-                              <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefWidth="528.0">
-                                 <children>
-                                    <AnchorPane layoutX="7.0" maxWidth="400.0" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: #107885; -fx-background-radius: 20px;">
-                                       <children>
-                                          <TextFlow layoutX="-2.0" layoutY="3.0" maxWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="0.0">
-                                             <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="hlw">
-                                                   <font>
-                                                      <Font size="14.0" />
-                                                   </font>
-                                                </Text>
-                                             </children>
-                                          </TextFlow>
-                                       </children>
-                                       <effect>
-                                          <DropShadow />
-                                       </effect>
-                                       <padding>
-                                          <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
-                                       </padding>
-                                    </AnchorPane>
-                                 </children>
-                              </AnchorPane>
-                           </children>
                            <padding>
                               <Insets top="15.0" />
                            </padding>

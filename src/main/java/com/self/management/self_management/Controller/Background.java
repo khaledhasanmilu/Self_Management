@@ -2,9 +2,11 @@ package com.self.management.self_management.Controller;
 
 import com.self.management.self_management.DB;
 import com.self.management.self_management.MainApp;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -15,13 +17,11 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
+import org.controlsfx.control.Notifications;
 
 import java.io.*;
 import java.net.URL;
-import java.sql.Blob;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.ResourceBundle;
@@ -209,7 +209,13 @@ public class Background implements Initializable {
         }catch (Exception r){
             System.out.println("sql error");
         }
-
+        try{
+            pst = con.prepareStatement("UPDATE `activestatus` SET `status`='active' WHERE `user`= ?");
+            pst.setString(1,loginController.username);
+            pst.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
         user.setText(user.getText()+name);
         email.setText(email.getText()+ema);
@@ -224,10 +230,50 @@ public class Background implements Initializable {
         if(img!=null){
             circlePhoto.setFill(new ImagePattern(img));
         }else {
-            img = new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream("IMG/milu.jpg")));
+            img = new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream("IMG/defaultuser.png")));
             circlePhoto.setFill(new ImagePattern(img));
         }
+        Thread incommingmsg = getThread();
+        incommingmsg.setDaemon(true);
+        Platform.runLater(incommingmsg::start);
 
+    }
+
+    private static Thread getThread() {
+        Thread incommingmsg = new Thread(() -> {
+            Connection con1 = DB.getConnection();
+            try {
+                assert con1 != null;
+                PreparedStatement pst1 = con1.prepareStatement("SELECT * FROM `activestatus` WHERE `user`=?");
+                pst1.setString(1,loginController.username);
+                ResultSet rst1;
+                while (true){
+                    rst1 = pst1.executeQuery();
+                    if(rst1.next()){
+                        int status = rst1.getInt(3);
+                        String user = rst1.getString(4);
+                        if(status==1){
+                            Platform.runLater(() -> Notifications.create()
+                                    .text(user+" Want to chat with you")
+                                    .position(Pos.TOP_RIGHT)
+                                    .show());
+                            pst1 = con1.prepareStatement("UPDATE `activestatus` SET `invoke`= 0,`invoke_user`= ? WHERE `user`= ?");
+                            pst1.setString(1,null);
+                            pst1.setString(2,loginController.username);
+                            pst1.execute();
+                        }
+                    }
+                    Thread.sleep(100);
+                }
+            } catch (SQLException e) {
+                System.out.println("Messege notification Check Faild");
+            } catch (InterruptedException e) {
+                System.out.println("sleep problem");
+            }
+
+        });
+      //  incommingmsg.setDaemon(true);
+        return incommingmsg;
     }
 
 

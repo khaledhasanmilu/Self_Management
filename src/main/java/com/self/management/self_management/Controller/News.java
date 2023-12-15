@@ -24,7 +24,8 @@ public class News {
     private AnchorPane loadingscreen;
     @FXML
     void onClose(ActionEvent event) {
-        System.exit(0);
+
+        Platform.exit();
     }
 
 

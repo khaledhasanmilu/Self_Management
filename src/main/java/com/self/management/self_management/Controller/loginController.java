@@ -199,7 +199,7 @@ public class loginController {
                 pst = con.prepareStatement(query);
                 if (pst.executeUpdate() > 0) {
                     System.out.println("SuccessFully Change Password");
-                    new CustomAlert(Alert.AlertType.ERROR, "Successfully change!!", "Congratulationd!Successfully Changed your Password!", "Password Changed");
+                    new CustomAlert(Alert.AlertType.INFORMATION, "Successfully change!!", "Congratulationd!Successfully Changed your Password!", "Password Changed");
                     Login.setVisible(true);
                     Registration.setVisible(false);
                     otpPane.setVisible(false);
@@ -207,7 +207,7 @@ public class loginController {
                 }
             }else {
                 System.out.println("pass and cpass didnt match");
-                new CustomAlert(Alert.AlertType.ERROR, "Didn't match", "Password and Confirm Password should be same.", "Password and Confirm Password didn't match");
+                new CustomAlert(Alert.AlertType.WARNING, "Didn't match", "Password and Confirm Password should be same.", "Password and Confirm Password didn't match");
             }
     }
 
@@ -222,7 +222,11 @@ public class loginController {
                pst = con.prepareStatement(query);
                if(pst.executeUpdate()>0){
                    System.out.println("SuccessFully Registered");
-                   new CustomAlert(Alert.AlertType.ERROR,"Now you can log in.!!","Congratulationd!Successfully Registered","Registered!");
+                   new CustomAlert(Alert.AlertType.INFORMATION,"Now you can log in.!!","Congratulationd!Successfully Registered","Registered!");
+                   pst = con.prepareStatement("INSERT INTO `activestatus`(`user`, `status`) VALUES (?,?)");
+                   pst.setString(1,uname);
+                   pst.setString(2,"Inactive");
+                   pst.execute();
                    Login.setVisible(true);
                    Registration.setVisible(false);
                    otpPane.setVisible(false);

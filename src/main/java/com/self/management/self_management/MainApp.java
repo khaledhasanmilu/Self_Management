@@ -1,5 +1,6 @@
 package com.self.management.self_management;
 
+import com.self.management.self_management.Controller.loginController;
 import com.self.management.self_management.Preloader.Launch;
 import com.self.management.self_management.Preloader.initPreloader;
 import javafx.application.Application;
@@ -11,6 +12,9 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.Objects;
 
 public class MainApp extends Application {
@@ -43,6 +47,20 @@ public class MainApp extends Application {
         });
 
         stage.show();
+    }
+
+    @Override
+    public void stop() throws Exception {
+        try{
+            Connection con = DB.getConnection();
+            PreparedStatement pst;
+            pst = con.prepareStatement("UPDATE `activestatus` SET `status`='Inactive' WHERE `user`= ?");
+            pst.setString(1, loginController.username);
+            pst.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        super.stop();
     }
 
     public static void main(String[] args) {

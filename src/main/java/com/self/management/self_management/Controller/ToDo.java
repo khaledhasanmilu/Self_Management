@@ -4,6 +4,7 @@ import com.self.management.self_management.DB;
 import com.self.management.self_management.MainApp;
 import com.self.management.self_management.Model.NoteModel;
 import com.self.management.self_management.Model.TaskModel;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -192,7 +193,7 @@ public class ToDo implements Initializable {
 
     @FXML
     void onClose(ActionEvent event) {
-        System.exit(0);
+        Platform.exit();
     }
 
 

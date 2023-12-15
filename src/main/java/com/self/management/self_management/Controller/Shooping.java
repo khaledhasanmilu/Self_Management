@@ -1,6 +1,7 @@
 package com.self.management.self_management.Controller;
 
 import com.self.management.self_management.MainApp;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -26,7 +27,8 @@ public class Shooping {
     private ImageView loadingimg;
     @FXML
     void onClose(ActionEvent event) {
-        System.exit(0);
+
+        Platform.exit();
     }
 
 

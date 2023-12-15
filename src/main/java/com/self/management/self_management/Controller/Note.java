@@ -3,6 +3,7 @@ package com.self.management.self_management.Controller;
 import com.self.management.self_management.DB;
 import com.self.management.self_management.MainApp;
 import com.self.management.self_management.Model.NoteModel;
+import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -67,7 +68,8 @@ public class Note implements Initializable {
 
     @FXML
     void onClose(ActionEvent event) {
-        System.exit(0);
+
+        Platform.exit();
     }
 
 
@@ -81,6 +83,8 @@ public class Note implements Initializable {
     void onAddNotebtn(ActionEvent event) {
         shownotepane.setVisible(false);
         createNotepane.setVisible(true);
+        NoteTitleFS.clear();
+        NoteBodyFS.clear();
         System.out.println(createNotepane.getParent().getLayoutX());
         System.out.println(createNotepane.getParent().getLayoutY());
     }
@@ -129,6 +133,7 @@ public class Note implements Initializable {
                     shownotepane.setVisible(false);
                     createNotepane.setVisible(false);
                     noteView.setVisible(true);
+
                     ViewTitle = controller.getNoteTitle().getText();
                     ViewBody = controller.getNoteBody().getText();
                     ViewDate = controller.getDate().getText();

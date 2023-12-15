@@ -6,11 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="e1ff0734-bd8e-438d-ad06-b7abe290c990" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/BagPackTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/BagPackTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Eticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Eticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/FinanceManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/FinanceManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Health.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Health.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/IncomeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/IncomeCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/News.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ReciveMassegeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ReciveMassegeCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Setting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Shooping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/Shooping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToolBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToolBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Health.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Health.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/self/management/self_management/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Message.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/Message.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/expanseCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/expanseCard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/finance.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/finance.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/reciveMassegeCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/self/management/self_management/FXML/reciveMassegeCard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702560196740</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update old design">
+      <option name="closed" value="true" />
+      <created>1702569314217</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702569314217</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -270,17 +295,7 @@
     <MESSAGE value="add todo" />
     <MESSAGE value="implement bag packing feature in toolbox" />
     <MESSAGE value="implement financial feature in toolbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement financial feature in toolbox" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/self/management/self_management/Controller/ToDo.java</url>
-          <line>194</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="update old design" />
+    <option name="LAST_COMMIT_MESSAGE" value="update old design" />
   </component>
 </project>

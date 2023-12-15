@@ -4,6 +4,7 @@ package com.self.management.self_management.Controller;
 import com.self.management.self_management.DB;
 import com.self.management.self_management.MainApp;
 import com.self.management.self_management.Model.CustomAlert;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -83,7 +84,8 @@ public class BagPackTool implements Initializable {
 
     @FXML
     void onClose(ActionEvent event) {
-        System.exit(0);
+
+        Platform.exit();
     }
 
 

@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="620.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Dashboard">
    <children>
@@ -22,50 +28,195 @@
             <FontAwesomeIconView glyphName="CLOSE" />
          </graphic>
       </Button>
-      <Pane layoutX="31.0" layoutY="47.0" prefHeight="220.0" prefWidth="435.0" style="-fx-background-color: #D8E2EB; -fx-background-radius: 20px;">
+      <Pane layoutX="31.0" layoutY="47.0" prefHeight="174.0" prefWidth="435.0" style="-fx-background-color: #D8E2EB; -fx-background-radius: 20px;">
          <children>
-            <Circle fx:id="circle" fill="WHITE" layoutX="91.0" layoutY="93.0" radius="79.0" stroke="WHITE" strokeType="INSIDE" />
-            <Label fx:id="name" layoutX="182.0" layoutY="44.0" prefHeight="17.0" prefWidth="253.0" text="Name           :" />
-            <Label fx:id="email" layoutX="182.0" layoutY="93.0" prefHeight="17.0" prefWidth="253.0" text="Email             :" />
-            <Label fx:id="dob" layoutX="182.0" layoutY="150.0" prefHeight="17.0" prefWidth="253.0" text="Date of Birth :" />
+            <Circle fx:id="circle" fill="WHITE" layoutX="72.0" layoutY="84.0" radius="58.0" stroke="WHITE" strokeType="INSIDE" />
+            <Label fx:id="name" layoutX="137.0" layoutY="26.0" prefHeight="17.0" prefWidth="253.0" text="Name         :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="email" layoutX="137.0" layoutY="71.0" prefHeight="17.0" prefWidth="253.0" text="Email         :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+            <Label fx:id="dob" layoutX="130.0" layoutY="121.0" prefHeight="17.0" prefWidth="253.0" text="Date of Birth :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
          </children>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
-      <Pane layoutX="24.0" layoutY="314.0" prefHeight="297.0" prefWidth="446.0" style="-fx-background-color: #D8E2EB; -fx-background-radius: 20px;">
+      <Pane layoutX="26.0" layoutY="251.0" prefHeight="359.0" prefWidth="446.0" style="-fx-background-color: #D8E2EB; -fx-background-radius: 20px;">
          <children>
             <Label layoutX="122.0" layoutY="24.0" prefHeight="28.0" prefWidth="218.0" text="Financial Satement" textFill="#238824">
                <font>
                   <Font name="Times New Roman Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="8.0" layoutY="84.0" text="Last Month Income : 35000/-">
+            <Label alignment="CENTER" layoutX="8.0" layoutY="77.0" prefHeight="27.0" prefWidth="188.0" text="Last Month Income ">
                <font>
-                  <Font name="System Bold" size="13.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="173.0" text="Present Cash : 7000/-">
+            <PieChart fx:id="pichart" layoutX="195.0" layoutY="83.0" legendSide="TOP" prefHeight="258.0" prefWidth="245.0" />
+            <Label fx:id="income_lb" alignment="CENTER" layoutX="19.0" layoutY="110.0" prefHeight="28.0" prefWidth="165.0" text="= 2000/=" textFill="#11863a">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="19.0" />
                </font>
             </Label>
-            <PieChart fx:id="pichart" layoutX="200.0" layoutY="62.0" legendSide="TOP" prefHeight="239.0" prefWidth="245.0" />
+            <Label alignment="CENTER" layoutX="7.0" layoutY="166.0" prefHeight="27.0" prefWidth="188.0" text="Last Month Expanse" textFill="#c72727">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="expanse_lb" alignment="CENTER" layoutX="22.0" layoutY="198.0" prefHeight="28.0" prefWidth="158.0" text="=2000/=" textFill="#ba1919">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="11.0" layoutY="243.0" prefHeight="27.0" prefWidth="180.0" text="Available Balance">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="balance_lb" alignment="CENTER" layoutX="22.0" layoutY="281.0" prefHeight="28.0" prefWidth="158.0" text="=2000/=" textFill="#ba1919">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
          </children>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
-      <VBox layoutX="487.0" layoutY="47.0" prefHeight="565.0" prefWidth="329.0" style="-fx-border-color: #D8E2EB; -fx-border-width: 2px;">
+      <AnchorPane layoutX="487.0" layoutY="47.0" prefHeight="561.0" prefWidth="332.0" style="-fx-background-color: white;">
          <children>
-            <AnchorPane prefHeight="49.0" prefWidth="329.0" style="-fx-border-color: #D8E2EB;">
+            <VBox prefHeight="561.0" prefWidth="332.0" style="-fx-background-color: white;">
                <children>
-                  <Label layoutX="93.0" layoutY="12.0" prefHeight="28.0" prefWidth="218.0" text="Notification" textFill="#238824">
-                     <font>
-                        <Font name="Times New Roman Bold" size="24.0" />
-                     </font>
-                  </Label>
+                  <AnchorPane prefHeight="49.0" prefWidth="329.0">
+                     <children>
+                        <Label layoutX="93.0" layoutY="12.0" prefHeight="28.0" prefWidth="218.0" text="Notification" textFill="#238824">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="511.0" prefWidth="332.0" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER">
+                     <content>
+                        <VBox prefHeight="516.0" prefWidth="329.0" spacing="10.0" style="-fx-border-color: transparent;">
+                           <children>
+                              <AnchorPane style="-fx-background-color: #d8e2eb; -fx-background-radius: 20px;">
+                                 <children>
+                                    <TextFlow layoutX="2.0" layoutY="-1.0" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="5.0">
+                                       <children>
+                                          <Text fill="#00942c" strokeType="OUTSIDE" strokeWidth="0.0" text="Nurul Want to Message with you">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color opacity="0.30000001192092896" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </AnchorPane>
+                              <AnchorPane layoutX="11.0" layoutY="11.0" style="-fx-background-color: #d8e2eb; -fx-background-radius: 20px;">
+                                 <children>
+                                    <TextFlow layoutX="2.0" layoutY="-1.0" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="5.0">
+                                       <children>
+                                          <Text fill="#00942c" strokeType="OUTSIDE" strokeWidth="0.0" text="You have a Trip Today">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color opacity="0.30000001192092896" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </AnchorPane>
+                              <AnchorPane layoutX="11.0" layoutY="64.0" style="-fx-background-color: #d8e2eb; -fx-background-radius: 20px;">
+                                 <children>
+                                    <TextFlow layoutX="2.0" layoutY="-1.0" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="5.0">
+                                       <children>
+                                          <Text fill="#00942c" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Checkout your bag before Trip">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color opacity="0.30000001192092896" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </AnchorPane>
+                              <AnchorPane layoutX="11.0" layoutY="117.0" style="-fx-background-color: #d8e2eb; -fx-background-radius: 20px;">
+                                 <children>
+                                    <TextFlow layoutX="2.0" layoutY="-1.0" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="5.0">
+                                       <children>
+                                          <Text fill="#00942c" strokeType="OUTSIDE" strokeWidth="0.0" text="Today you have  a task 'CT Exam'">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color opacity="0.30000001192092896" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </AnchorPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
                </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="96.0" prefWidth="329.0" />
-            <AnchorPane prefHeight="93.0" prefWidth="329.0" />
-            <AnchorPane prefHeight="94.0" prefWidth="329.0" />
-            <AnchorPane prefHeight="79.0" prefWidth="329.0" />
+            </VBox>
          </children>
-      </VBox>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
    </children>
 </AnchorPane>

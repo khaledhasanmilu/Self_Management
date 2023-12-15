@@ -2,6 +2,7 @@ package com.self.management.self_management.Controller;
 
 import com.self.management.self_management.MainApp;
 import com.self.management.self_management.Model.CustomNotification;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -58,7 +59,8 @@ public class ToolBox{
 
     @FXML
     void onClose(ActionEvent event) {
-        System.exit(0);
+
+        Platform.exit();
     }
 
 
