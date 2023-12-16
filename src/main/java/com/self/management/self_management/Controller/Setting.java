@@ -38,7 +38,8 @@ public class Setting implements Initializable {
 
     @FXML
     private Label email;
-
+    @FXML
+    private Label genderlbl;
     @FXML
     private Label name;
     @FXML
@@ -106,7 +107,7 @@ public class Setting implements Initializable {
     String nam = null;
     String ema = null;
     String date = null;
-
+    String gender = null;
     InputStream is;
     FileOutputStream fis = null;
     Blob blob;
@@ -119,6 +120,7 @@ public class Setting implements Initializable {
         nam=rst.getString(1);
         ema=rst.getString(2);
         date=rst.getString(3);
+        gender=rst.getString(4);
         blob = rst.getBlob(6);
         is = blob.getBinaryStream();
         image = new Image(is);
@@ -135,6 +137,7 @@ public class Setting implements Initializable {
         name.setText(name.getText()+nam);
         email.setText(email.getText()+ema);
         dob.setText(dob.getText()+date);
+        genderlbl.setText(genderlbl.getText()+gender);
         if(image!=null){
             circle.setFill(new ImagePattern(image));
         }else {

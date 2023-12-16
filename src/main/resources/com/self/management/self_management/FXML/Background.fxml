@@ -3,15 +3,18 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#onDrage" onMousePressed="#onPrassed" prefHeight="620.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Background">
    <left>
-      <VBox alignment="TOP_CENTER" prefHeight="620.0" prefWidth="243.0" spacing="10.0" style="-fx-background-color: #9a9a9a;">
+      <VBox fx:id="leftVbox" alignment="TOP_CENTER" prefHeight="620.0" prefWidth="243.0" spacing="10.0" style="-fx-background-color: #a9b0b7;">
          <children>
             <AnchorPane prefHeight="140.0" prefWidth="243.0">
                <children>
@@ -41,40 +44,218 @@
                   </VBox>
                </children>
             </AnchorPane>
-            <Button mnemonicParsing="false" onAction="#onDashboard" prefHeight="48.0" prefWidth="243.0" styleClass="btn" stylesheets="@../CSS/login.css" text="Dashboard">
+            <Button fx:id="dashbtn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#onDashboard" prefHeight="48.0" prefWidth="243.0" styleClass="onRightsidebtn" stylesheets="@../CSS/login.css">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/dashboard.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Dashboard">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onFinance" prefHeight="40.0" prefWidth="243.0" styleClass="btn" stylesheets="@../CSS/login.css" text="Finance">
+            <Button fx:id="finanancbtn" graphicTextGap="20.0" mnemonicParsing="false" onAction="#onFinance" prefHeight="40.0" prefWidth="243.0" styleClass="onRightsidebtn" stylesheets="@../CSS/login.css">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/finance.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Finance">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="45.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onToDo" prefHeight="45.0" prefWidth="243.0" styleClass="btn" stylesheets="@../CSS/login.css" text="To Do">
+            <Button fx:id="todobtn" mnemonicParsing="false" onAction="#onToDo" prefHeight="45.0" prefWidth="243.0" styleClass="onRightsidebtn" stylesheets="@../CSS/login.css">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/todo1-removebg-preview.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Todo">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="-10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onNote" prefHeight="45.0" prefWidth="243.0" styleClass="btn" stylesheets="@../CSS/login.css" text="Note ">
+            <Button fx:id="notebtn" mnemonicParsing="false" onAction="#onNote" prefHeight="45.0" prefWidth="243.0" styleClass="onRightsidebtn" stylesheets="@../CSS/login.css">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="245.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/Note.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Note">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="-10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="45.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onMessage" prefHeight="48.0" prefWidth="243.0" styleClass="btn" stylesheets="@../CSS/login.css" text="Message">
+            <Button fx:id="messegbtn" mnemonicParsing="false" onAction="#onMessage" prefHeight="48.0" prefWidth="243.0" styleClass="onRightsidebtn" stylesheets="@../CSS/login.css">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="37.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/Messaging.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Message">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="43.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onToolBox" prefHeight="43.0" prefWidth="243.0" styleClass="btn" stylesheets="@../CSS/login.css" text="Toll Box">
+            <Button fx:id="toolbtn" mnemonicParsing="false" onAction="#onToolBox" prefHeight="43.0" prefWidth="243.0" styleClass="onRightsidebtn" stylesheets="@../CSS/login.css">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/icons8-toolbox-50.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Tool Box">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="43.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onSetting" prefHeight="42.0" prefWidth="243.0" styleClass="btn" stylesheets="@../CSS/login.css" text="Setting">
+            <Button fx:id="settingbtn" mnemonicParsing="false" onAction="#onSetting" prefHeight="42.0" prefWidth="243.0" styleClass="onRightsidebtn" stylesheets="@../CSS/login.css">
                <font>
                   <Font name="Times New Roman" size="15.0" />
                </font>
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/icons8-setting-48.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Setting">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
             </Button>
             <Button mnemonicParsing="false" onAction="#onLogout" prefHeight="25.0" prefWidth="135.0" styleClass="logoutbtn" stylesheets="@../CSS/login.css" text="Log out" textFill="#170606">
                <font>

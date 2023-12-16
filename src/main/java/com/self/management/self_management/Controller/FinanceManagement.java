@@ -63,8 +63,7 @@ public class FinanceManagement implements Initializable {
     private Label total_incomelb;
     @FXML
     private ComboBox<String> quickSelectCombo;
-    private int Total_income;
-    private int Total_Expanse;
+
     @FXML
     void onAddIncome(ActionEvent event) throws IOException {
         LocalDate date = LocalDate.now();
@@ -85,6 +84,7 @@ public class FinanceManagement implements Initializable {
         } catch (SQLException e) {
             System.out.println("income connection erro");
         }
+        initialize(null,null);
     }
 
 
@@ -120,6 +120,7 @@ public class FinanceManagement implements Initializable {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
+
         initialize(null,null);
     }
 
@@ -150,15 +151,20 @@ public class FinanceManagement implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ArrayList<String> list = new ArrayList<>();
-        Total_income = 0;
-        Total_Expanse=0;
+        int total_income = 0;
+        int total_Expanse = 0;
         list.add("Job");
         list.add("Bank");
         list.add("Business");
+        quickSelectCombo.getItems().clear();
         quickSelectCombo.getItems().addAll(list);
         quickSelectCombo.setOnAction(event -> addBalanceCatagoryField.setText(quickSelectCombo.getValue()));
         incomeVbox.getChildren().clear();
         expanseVbox.getChildren().clear();
+        expanceMonyField.clear();
+        expanceCatagoryField.clear();
+        addBalanceField.clear();
+        addBalanceCatagoryField.clear();
         Connection con = DB.getConnection();
         try {
             assert con != null;
@@ -171,7 +177,7 @@ public class FinanceManagement implements Initializable {
                 incomeVbox.getChildren().add(loader.load());
                 IncomeCard incomeCard = loader.getController();
                 incomeCard.setData(rst.getString(3),rst.getDate(4).toString(), String.valueOf(rst.getInt(5)), rst.getInt(2));
-                Total_income+=rst.getInt(5);
+                total_income +=rst.getInt(5);
             }
             pst = con.prepareStatement("SELECT * FROM `expensedata` WHERE `user` = ?");
             pst.setString(1,loginController.username);
@@ -182,16 +188,16 @@ public class FinanceManagement implements Initializable {
                 expanseVbox.getChildren().add(loader.load());
                 ExpanseCard expanseCard = loader.getController();
                 expanseCard.setData(rst.getString(3),rst.getDate(4).toString(), String.valueOf(rst.getInt(5)));
-                Total_Expanse+=rst.getInt(5);
+                total_Expanse +=rst.getInt(5);
             }
         } catch (SQLException e) {
             System.out.println("income connection erro");
         } catch (IOException e){
             throw new RuntimeException(e);
         }
-        currentBalance.setText(Total_income - Total_Expanse +"/=");
-        total_expanselb.setText(Total_Expanse +"/=");
-        total_incomelb.setText(Total_income +"/=");
+        currentBalance.setText(total_income - total_Expanse +"/=");
+        total_expanselb.setText(total_Expanse +"/=");
+        total_incomelb.setText(total_income +"/=");
 
     }
 }

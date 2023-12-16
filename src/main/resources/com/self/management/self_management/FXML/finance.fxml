@@ -119,12 +119,19 @@
                      </padding>
                   </VBox>
                </content>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect>
             </ScrollPane>
          </children>
       </AnchorPane>
       <VBox layoutX="14.0" layoutY="67.0" prefHeight="544.0" prefWidth="447.0" spacing="10.0">
          <children>
-            <AnchorPane prefHeight="93.0" prefWidth="447.0" style="-fx-background-color: #BDC3C7; -fx-background-radius: 20px;">
+            <AnchorPane prefHeight="93.0" prefWidth="447.0" style="-fx-background-color: #BDC3C7; -fx-background-radius: 20 20 0 0;">
                <children>
                   <Label layoutX="115.0" layoutY="8.0" prefHeight="45.0" prefWidth="255.0" text="Your Curent Balance : " textFill="#4184c3">
                      <font>
@@ -137,8 +144,15 @@
                      </font>
                   </Label>
                </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
             </AnchorPane>
-            <AnchorPane prefHeight="143.0" prefWidth="447.0" style="-fx-background-color: #BDC3C7; -fx-background-radius: 100 0 100 0;">
+            <AnchorPane prefHeight="143.0" prefWidth="447.0" style="-fx-background-color: #BDC3C7; -fx-background-radius: 0 0 50 50;">
                <children>
                   <TextField fx:id="addBalanceField" layoutX="36.0" layoutY="47.0" prefHeight="32.0" prefWidth="182.0" promptText="add Income Money" />
                   <TextField fx:id="addBalanceCatagoryField" layoutX="36.0" layoutY="88.0" prefHeight="32.0" prefWidth="182.0" promptText="add Income Catagoru" />
@@ -155,6 +169,13 @@
                      </font>
                   </Label>
                </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
             </AnchorPane>
             <ScrollPane hbarPolicy="NEVER" prefHeight="281.0" prefWidth="447.0" styleClass="viewport" stylesheets="@../CSS/login.css" vbarPolicy="NEVER">
                <content>
@@ -164,6 +185,13 @@
                      </padding>
                   </VBox>
                </content>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect>
             </ScrollPane>
          </children></VBox>
       <Button layoutX="749.0" layoutY="14.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="Whitebtn" stylesheets="@../CSS/login.css">

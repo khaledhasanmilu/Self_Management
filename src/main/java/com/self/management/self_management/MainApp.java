@@ -32,7 +32,6 @@ public class MainApp extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("FXML/login.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root, 600, 400);
-        stage.setTitle("Hello!");
         stage.initStyle(StageStyle.UNDECORATED);
         stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("IMG/firstlogo.png"))));
         stage.setScene(scene);
@@ -54,6 +53,7 @@ public class MainApp extends Application {
         try{
             Connection con = DB.getConnection();
             PreparedStatement pst;
+            assert con != null;
             pst = con.prepareStatement("UPDATE `activestatus` SET `status`='Inactive' WHERE `user`= ?");
             pst.setString(1, loginController.username);
             pst.execute();

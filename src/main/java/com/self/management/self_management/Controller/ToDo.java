@@ -81,9 +81,9 @@ public class ToDo implements Initializable {
         editTaskPane.setVisible(false);
         CreateTaskPane.setVisible(true);
         allTaskPane.setVisible(false);
-        editTaskTitle.setText("");
-        editTaskDate.getEditor().setText("");
-        editTaskDetails.setText("");
+        createTaskTitle.clear();
+        createTaskDate.getEditor().clear();
+        createTaskDetails.clear();
     }
 
     @FXML
@@ -99,6 +99,7 @@ public class ToDo implements Initializable {
         editTaskPane.setVisible(false);
         CreateTaskPane.setVisible(false);
         allTaskPane.setVisible(true);
+
         //progress setting
         LocalDate todayDate = LocalDate.now();
         String progress;

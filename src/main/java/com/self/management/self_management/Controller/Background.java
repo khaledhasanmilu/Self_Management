@@ -10,10 +10,12 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
@@ -31,7 +33,6 @@ public class Background implements Initializable {
     private static double yOffset = 0;
     Stage stage;
     public  Image img;
-
     @FXML
     private Label email;
     @FXML
@@ -44,7 +45,6 @@ public class Background implements Initializable {
     private Label user;
 
 
-
     @FXML
     void onDashboard() {
         Node node;
@@ -54,6 +54,10 @@ public class Background implements Initializable {
             throw new RuntimeException(e);
         }
         root.setCenter(node);
+
+
+
+
     }
 
     @FXML
@@ -63,16 +67,6 @@ public class Background implements Initializable {
         stage.setY(event.getScreenY()-yOffset);
     }
 
-    @FXML
-    void onEticket() {
-        Node node;
-        try {
-            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/Eticket.fxml")));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        root.setCenter(node);
-    }
 
     @FXML
     void onLogout() throws IOException {
@@ -101,18 +95,9 @@ public class Background implements Initializable {
             throw new RuntimeException(e);
         }
         root.setCenter(node);
+
     }
 
-    @FXML
-    void onNews() {
-        Node node;
-        try {
-            node = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("FXML/News.fxml")));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        root.setCenter(node);
-    }
 
     @FXML
     void onSetting() {
@@ -123,6 +108,7 @@ public class Background implements Initializable {
             throw new RuntimeException(e);
         }
         root.setCenter(node);
+
     }
 
     @FXML
@@ -134,6 +120,7 @@ public class Background implements Initializable {
             throw new RuntimeException(e);
         }
         root.setCenter(node);
+
     }
 
     @FXML
@@ -152,6 +139,7 @@ public class Background implements Initializable {
             throw new RuntimeException(e);
         }
         root.setCenter(node);
+
     }
 
     @FXML
@@ -163,6 +151,7 @@ public class Background implements Initializable {
             throw new RuntimeException(e);
         }
         root.setCenter(node);
+
     }
     @FXML
     void onFinance() {
@@ -173,6 +162,7 @@ public class Background implements Initializable {
             throw new RuntimeException(e);
         }
         root.setCenter(node);
+
     }
 
     @Override

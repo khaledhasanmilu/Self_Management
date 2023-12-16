@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Circle?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="620.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Setting">
    <children>
@@ -36,19 +36,87 @@
                   </DropShadow>
                </effect>
             </Circle>
-            <Button fx:id="editbtn" layoutX="88.0" layoutY="227.0" mnemonicParsing="false" onAction="#onEditPhoto" prefHeight="25.0" prefWidth="51.0" text="Edit" />
-            <Button fx:id="cancelbtn" layoutX="22.0" layoutY="227.0" mnemonicParsing="false" onAction="#onCancelImgbtn" text="Cancel" visible="false" />
-            <Button fx:id="savebtn" layoutX="154.0" layoutY="227.0" mnemonicParsing="false" onAction="#onSaveImgbtn" prefHeight="25.0" prefWidth="51.0" text="Save" visible="false" />
-            <TextField layoutX="106.0" layoutY="273.0" />
-            <TextField layoutX="106.0" layoutY="324.0" />
-            <TextField layoutX="106.0" layoutY="378.0" />
-            <TextField layoutX="320.0" layoutY="324.0" prefHeight="25.0" prefWidth="98.0" />
-            <Button layoutX="343.0" layoutY="378.0" mnemonicParsing="false" text="Confirm" />
-            <Button layoutX="211.0" layoutY="440.0" mnemonicParsing="false" text="Update" />
-            <Label fx:id="name" layoutX="241.0" layoutY="52.0" text="Name" />
-            <Label fx:id="email" layoutX="241.0" layoutY="89.0" text="Email" />
-            <Label layoutX="241.0" layoutY="126.0" text="Gende" />
-            <Label fx:id="dob" layoutX="241.0" layoutY="169.0" text="Date of Birth" />
+            <Button fx:id="editbtn" layoutX="88.0" layoutY="227.0" mnemonicParsing="false" onAction="#onEditPhoto" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: white;" text="Edit">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button fx:id="cancelbtn" layoutX="22.0" layoutY="227.0" mnemonicParsing="false" onAction="#onCancelImgbtn" style="-fx-background-color: white;" text="Cancel" visible="false">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button fx:id="savebtn" layoutX="154.0" layoutY="227.0" mnemonicParsing="false" onAction="#onSaveImgbtn" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: white;" text="Save" visible="false">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <TextField layoutX="106.0" layoutY="273.0" prefHeight="25.0" prefWidth="157.0" promptText="change Email" style="-fx-background-color: white; -fx-background-radius: 20px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect></TextField>
+            <TextField layoutX="106.0" layoutY="324.0" prefHeight="25.0" prefWidth="157.0" promptText="change password" style="-fx-background-radius: 20px; -fx-background-color: white;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect></TextField>
+            <TextField layoutX="105.0" layoutY="378.0" prefHeight="25.0" prefWidth="157.0" promptText="confirm change password" style="-fx-background-color: white; -fx-background-radius: 20px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect></TextField>
+            <TextField layoutX="320.0" layoutY="324.0" prefHeight="25.0" prefWidth="98.0" promptText="enter OTP" />
+            <Button layoutX="343.0" layoutY="378.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Confirm">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.4000000059604645" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button layoutX="211.0" layoutY="440.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Update">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Label fx:id="name" layoutX="224.0" layoutY="50.0" text="Name : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="email" layoutX="226.0" layoutY="84.0" text="Email : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="genderlbl" layoutX="219.0" layoutY="124.0" text="Gender : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="dob" layoutX="211.0" layoutY="164.0" text="Date of Birth : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
          </children>
       </AnchorPane>
    </children>

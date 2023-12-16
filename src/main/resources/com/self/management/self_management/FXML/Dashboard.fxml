@@ -16,26 +16,33 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="620.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Dashboard">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="620.0" prefWidth="830.0" style="-fx-background-color: #f4f4f4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.Dashboard">
    <children>
-      <Button layoutX="763.0" layoutY="2.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="close" stylesheets="@../CSS/login.css">
+      <Button layoutX="751.0" layoutY="14.0" mnemonicParsing="false" onAction="#onMinimize" styleClass="Whitebtn" stylesheets="@../CSS/login.css">
          <graphic>
             <FontAwesomeIconView glyphName="MINUS" />
          </graphic>
       </Button>
-      <Button layoutX="798.0" layoutY="2.0" mnemonicParsing="false" onAction="#onClose" styleClass="close" stylesheets="@../CSS/login.css">
+      <Button layoutX="793.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClose" styleClass="Whitebtnclose" stylesheets="@../CSS/login.css">
          <graphic>
             <FontAwesomeIconView glyphName="CLOSE" />
          </graphic>
       </Button>
-      <Pane layoutX="31.0" layoutY="47.0" prefHeight="174.0" prefWidth="435.0" style="-fx-background-color: #D8E2EB; -fx-background-radius: 20px;">
+      <Pane layoutX="31.0" layoutY="47.0" prefHeight="174.0" prefWidth="435.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
          <children>
-            <Circle fx:id="circle" fill="WHITE" layoutX="72.0" layoutY="84.0" radius="58.0" stroke="WHITE" strokeType="INSIDE" />
-            <Label fx:id="name" layoutX="137.0" layoutY="26.0" prefHeight="17.0" prefWidth="253.0" text="Name         :">
+            <Circle fx:id="circle" fill="WHITE" layoutX="72.0" layoutY="84.0" radius="58.0" stroke="WHITE" strokeType="INSIDE">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect></Circle>
+            <Label fx:id="name" layoutX="137.0" layoutY="26.0" prefHeight="17.0" prefWidth="253.0" text="Name  : ">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font></Label>
-            <Label fx:id="email" layoutX="137.0" layoutY="71.0" prefHeight="17.0" prefWidth="253.0" text="Email         :">
+            <Label fx:id="email" layoutX="137.0" layoutY="71.0" prefHeight="17.0" prefWidth="253.0" text="Email :">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font></Label>
@@ -45,14 +52,17 @@
                </font></Label>
          </children>
          <effect>
-            <DropShadow />
+            <DropShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color></DropShadow>
          </effect>
       </Pane>
-      <Pane layoutX="26.0" layoutY="251.0" prefHeight="359.0" prefWidth="446.0" style="-fx-background-color: #D8E2EB; -fx-background-radius: 20px;">
+      <Pane layoutX="26.0" layoutY="251.0" prefHeight="359.0" prefWidth="446.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
          <children>
-            <Label layoutX="122.0" layoutY="24.0" prefHeight="28.0" prefWidth="218.0" text="Financial Satement" textFill="#238824">
+            <Label alignment="CENTER" layoutX="79.0" layoutY="24.0" prefHeight="33.0" prefWidth="290.0" text="Financial Satement" textFill="#238824">
                <font>
-                  <Font name="Times New Roman Bold" size="24.0" />
+                  <Font name="Century Gothic Bold" size="26.0" />
                </font>
             </Label>
             <Label alignment="CENTER" layoutX="8.0" layoutY="77.0" prefHeight="27.0" prefWidth="188.0" text="Last Month Income ">
@@ -61,7 +71,7 @@
                </font>
             </Label>
             <PieChart fx:id="pichart" layoutX="195.0" layoutY="83.0" legendSide="TOP" prefHeight="258.0" prefWidth="245.0" />
-            <Label fx:id="income_lb" alignment="CENTER" layoutX="19.0" layoutY="110.0" prefHeight="28.0" prefWidth="165.0" text="= 2000/=" textFill="#11863a">
+            <Label fx:id="income_lb" alignment="CENTER" layoutX="19.0" layoutY="110.0" prefHeight="28.0" prefWidth="165.0" text="= 2000/-">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
@@ -71,7 +81,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="expanse_lb" alignment="CENTER" layoutX="22.0" layoutY="198.0" prefHeight="28.0" prefWidth="158.0" text="=2000/=" textFill="#ba1919">
+            <Label fx:id="expanse_lb" alignment="CENTER" layoutX="22.0" layoutY="198.0" prefHeight="28.0" prefWidth="158.0" text="=2000/-" textFill="#ba1919">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
@@ -81,19 +91,22 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="balance_lb" alignment="CENTER" layoutX="22.0" layoutY="281.0" prefHeight="28.0" prefWidth="158.0" text="=2000/=" textFill="#ba1919">
+            <Label fx:id="balance_lb" alignment="CENTER" layoutX="22.0" layoutY="281.0" prefHeight="28.0" prefWidth="158.0" text="=2000/-">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
             </Label>
          </children>
          <effect>
-            <DropShadow />
+            <DropShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color></DropShadow>
          </effect>
       </Pane>
-      <AnchorPane layoutX="487.0" layoutY="47.0" prefHeight="561.0" prefWidth="332.0" style="-fx-background-color: white;">
+      <AnchorPane layoutX="487.0" layoutY="47.0" prefHeight="561.0" prefWidth="332.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
          <children>
-            <VBox prefHeight="561.0" prefWidth="332.0" style="-fx-background-color: white;">
+            <VBox prefHeight="561.0" prefWidth="332.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
                <children>
                   <AnchorPane prefHeight="49.0" prefWidth="329.0">
                      <children>
@@ -213,7 +226,7 @@
          <effect>
             <DropShadow>
                <color>
-                  <Color opacity="0.5" />
+                  <Color opacity="0.20000000298023224" />
                </color>
             </DropShadow>
          </effect>

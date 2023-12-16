@@ -9,21 +9,25 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane prefHeight="251.0" prefWidth="236.0" style="-fx-background-color: white; -fx-background-radius: 20px; -fx-border-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.NoteCard">
+<AnchorPane prefHeight="251.0" prefWidth="236.0" style="-fx-background-color: #e1e8ed; -fx-background-radius: 20px; -fx-border-radius: 20px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.self.management.self_management.Controller.NoteCard">
    <children>
-      <TextFlow layoutY="-2.0" prefHeight="67.0" prefWidth="250.0" textAlignment="CENTER">
-         <padding>
-            <Insets bottom="3.0" left="3.0" right="3.0" top="30.0" />
-         </padding>
+      <AnchorPane layoutY="-2.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: black;">
          <children>
-            <Label fx:id="noteTitle" alignment="CENTER" contentDisplay="CENTER" text="Label">
-               <font>
-                  <Font name="Copperplate Gothic Bold" size="12.0" />
-               </font>
-            </Label>
+            <TextFlow prefHeight="58.0" prefWidth="250.0" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="30.0" />
+               </padding>
+               <children>
+                  <Label fx:id="noteTitle" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="221.0" text="Label">
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </TextFlow>
          </children>
-      </TextFlow>
-      <Label fx:id="date" layoutX="101.0" layoutY="228.0" text="Last Edit :" />
+      </AnchorPane>
+      <Label fx:id="date" layoutX="76.0" layoutY="228.0" text="Last Edit :" />
       <TextFlow layoutX="5.0" layoutY="68.0" prefHeight="155.0" prefWidth="243.0">
          <children>
             <Text fx:id="noteBody" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
@@ -36,7 +40,7 @@
    <effect>
       <DropShadow>
          <color>
-            <Color opacity="0.5" />
+            <Color opacity="0.30000001192092896" />
          </color>
       </DropShadow>
    </effect>
