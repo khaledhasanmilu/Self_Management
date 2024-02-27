@@ -58,7 +58,11 @@ Thanks to the following people who have contributed to this project:
 
 - [Khaled Hasan Milu](https://github.com/khaledhasanmilu)
 - [Nurul Huda Arosh](https://github.com/nurulhuda5801)
-- ...
+## Contributors
+
+<!-- CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- CONTRIBUTORS-LIST:END -->
+
 
 
 
