@@ -10,6 +10,7 @@ Self Management is a Java-based project designed to help individuals manage and 
 ## Features
 
 - **Task Management**: Keep track of your tasks, prioritize them, and mark them as completed.
+     <img src="/asstes/App_Screenshot/screenshot%20(8).png" width="200"/>
 - **Goal Setting**: Set and monitor your short-term and long-term goals.
 - **Habit Tracking**: Form positive habits by tracking your daily activities.
 - **User-Friendly Interface**: Intuitive and easy-to-use interface for a seamless user experience.
@@ -47,18 +48,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Special thanks to contributors who have participated in this project.
 Feel free to reach out if you have any questions or issues. Happy self-managing!
 
-```vbnet
-
-Make sure to replace placeholders like `[khaledhasanmilu]` with your actual GitHub username and customize sections like the Features, Getting Started, and Contributing to match the specifics of your project.
-
-```
 ## Contributors
 
 Thanks to the following people who have contributed to this project:
 
 - [Khaled Hasan Milu](https://github.com/khaledhasanmilu)
 - [Nurul Huda Arosh](https://github.com/nurulhuda5801)
-[![GitHub contributors]](https://github.com/khaledhasanmilu/Self_Management/graphs/contributors)
 
 
 
