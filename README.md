@@ -8,14 +8,24 @@
 Self Management is a Java-based project designed to help individuals manage and organize various aspects of their lives effectively. Whether it's task management, goal setting, or habit tracking, this project provides a flexible and customizable platform for self-management.
 
 ## Features
-
-- **Task Management**: Keep track of your tasks, prioritize them, and mark them as completed.
-    <br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__todo.png"/>
+- **DashBoard**:
+    <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__Dashboard.png"/>
     <br/>
-- **Goal Setting**: Set and monitor your short-term and long-term goals.
-- **Habit Tracking**: Form positive habits by tracking your daily activities.
-- **User-Friendly Interface**: Intuitive and easy-to-use interface for a seamless user experience.
-
+- **Task Management**: Keep track of your tasks, prioritize them, and mark them as completed.
+    <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__todo.png"/>
+    <br/>
+- **Finance Mangement**:
+ <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__finance.png"/>
+    <br/>
+- **Create Note**: 
+ <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__note.png"/>
+    <br/>
+- **ToolBox**:
+ <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__toolBox.png"/>
+    <br/>
+    - **Messaging**:
+ <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__message.png"/>
+    <br/>
 ## Getting Started
 
 ### Prerequisites
