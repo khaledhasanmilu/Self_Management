@@ -27,12 +27,9 @@ Self Management is a Java-based project designed to help individuals manage and 
    ```bash
    git clone https://github.com/your-username/self-management.git
 2.Navigate to the project directory:
-    ```bash 
-       cd self-management
-3.Build the project using Maven:
-mvn clean install
-4.Run the application:
-java -jar target/self-management.jar
+   ```bash 
+   cd self-management
+
 
 You can copy and paste this into your README.md file on GitHub, and it should display properly with the correct formatting. Adjust the URLs and file paths as needed for your project.
 
