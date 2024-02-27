@@ -52,6 +52,6 @@ Feel free to reach out if you have any questions or issues. Happy self-managing!
 Make sure to replace placeholders like `[khaledhasanmilu]` with your actual GitHub username and customize sections like the Features, Getting Started, and Contributing to match the specifics of your project.
 
 ```
-[![GitHub contributors](https://img.shields.io/github/contributors/your-username/self-management.svg)](https://github.com/your-username/self-management/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/khaledhasanmilu/self-management.svg)](https://github.com/nurulhuda5801/self-management/graphs/contributors)
 
 
