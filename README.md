@@ -29,14 +29,12 @@ Self Management is a Java-based project designed to help individuals manage and 
    git clone https://github.com/your-username/self-management.git
 Navigate to the project directory:
 
+2.Build the project using Maven:  
 ```bash
-cd self-management
-Build the project using Maven:
-
+    cd self-management
+3.Run the application:
 ```bash
-mvn clean install
-Run the application:
-
+     mvn clean install
 ```bash
 java -jar target/self-management.jar
 Contributing
