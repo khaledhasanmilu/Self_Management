@@ -10,7 +10,7 @@ Self Management is a Java-based project designed to help individuals manage and 
 ## Features
 
 - **Task Management**: Keep track of your tasks, prioritize them, and mark them as completed.
-     <img src="/asstes/App_Screenshot/screenshot%20(8).png" width="200"/>
+     <img src="src/main/resources/com/self/management/self_management/IMG/pic__todo.png" width="200"/>
 - **Goal Setting**: Set and monitor your short-term and long-term goals.
 - **Habit Tracking**: Form positive habits by tracking your daily activities.
 - **User-Friendly Interface**: Intuitive and easy-to-use interface for a seamless user experience.
