@@ -7,7 +7,7 @@
 
 Self Management is a Java-based project designed to help individuals manage and organize various aspects of their lives effectively. Whether it's task management, goal setting, or habit tracking, this project provides a flexible and customizable platform for self-management.
 
-## Features
+## Features🧿
 - **DashBoard**:
     <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__Dashboard.png"/>
     <br/>
