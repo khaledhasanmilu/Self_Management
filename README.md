@@ -26,8 +26,9 @@ Self Management is a Java-based project designed to help individuals manage and 
     - **Messaging**:
  <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__message.png"/>
     <br/>
-## Getting Started
-
+##Demo Vedio
+[![Demo Video](https://img.youtube.com/vi/[YOUR_VIDEO_ID](https://youtu.be/CZAjQ8R-624?si=yJzg8jJD-n7HPtwP)/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/CZAjQ8R-624?si=yJzg8jJD-n7HPtwP)
+    
 ### Prerequisites
 
 - Java Development Kit (JDK) 11 or later
