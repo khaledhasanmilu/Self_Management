@@ -23,7 +23,7 @@ Self Management is a Java-based project designed to help individuals manage and 
 - **ToolBox**:
  <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__toolBox.png"/>
     <br/>
-    - **Messaging**:
+- **Messaging**:
  <br><br> <img src="src/main/resources/com/self/management/self_management/IMG/pic__message.png"/>
     <br/>
     
